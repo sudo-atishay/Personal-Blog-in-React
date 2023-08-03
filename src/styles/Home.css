@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    color: #3e497a;
+  }
+  
+  .about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #21325e;
+    color: #f0f0f0;
+  }
+  
+  .about h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    color: #e9d35b;
+    height: 50px;
+  }
+
+  .rectangle-image {
+    max-width: 100%;
+    height: auto;
+    /* Add any additional styling for the image as needed */
+  }
+  
+  .about .prompt {
+    width: 40%;
+    font-size: 30px;
+    margin-top: 50px; /* Add margin to create space between heading and paragraph */
+    padding: 40px; /* Add padding to create space between the paragraph and icons */
+  }
+  .prompt svg {
+    font-size: 60px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .skills {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills h1 {
+    color: #3e497a;
+  }
+  
+  .skills .list {
+    list-style: none;
+    width: 60%;
+  }
+  
+  .list span {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about h2 {
+      font-size: 40px;
+    }
+  
+    .about .prompt {
+      margin-top: 10px;
+      font-size: 20px;
+      width: 80%;
+    }
+  
+    .skills {
+      text-align: center;
+    }
+    .list {
+      padding: 0;
+    }
+  
+    .skills h2 {
+      font-size: 30px;
+    }
+  }
+
+
+  /* Home.css */
+.icon-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 24px;
+}
+
+.Resume {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 16px;
+  color: #000; /* Adjust the color to your preference */
+  text-decoration: none;
+  border: 1px solid #000; /* Add a border if you want to make it look like a button */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.Resume:hover {
+  background-color: #000;
+  color: #fff;
+}
