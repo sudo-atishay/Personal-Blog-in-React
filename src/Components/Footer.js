@@ -7,7 +7,6 @@ import "../styles/Footer.css";
 function Footer() {
   const GitHubAccountUrl = 'https://github.com/atishay2305-hub';
   const LinkedInAccountUrl = 'https://www.linkedin.com/in/atishay23/';
-  const BlogUrl = 'https://rawdev.hashnode.dev/';
 
   return (
     <div className='footer'>
@@ -19,7 +18,7 @@ function Footer() {
           <GitHubIcon />
         </a>
       </div>
-      <p>&copy; 2023 atishay.com</p>
+      <p>&copy; 2023 atishayjain.site</p>
     </div>
   );
 }

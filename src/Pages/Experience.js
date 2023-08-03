@@ -20,7 +20,7 @@ function Experience() {
       <VerticalTimeline lineColor='#3e497a'>
       <VerticalTimelineElement className='vertical-timeline-element--education' 
         date="June 2020 - July 2020" 
-        iconStyle={{background: "#77DD77", color: "#fff"}}
+        iconStyle={{background: "#e9d35b", color: "#fff"}}
         icon={<WorkIcon />}>
           <h3 className='vertical-timeline-element-title'>Minerva Solutions, New Delhi, India</h3>
           <p>Software Engineer Intern</p>
@@ -30,7 +30,7 @@ function Experience() {
       <VerticalTimeline lineColor='#3e497a'>
       <VerticalTimelineElement className='vertical-timeline-element--education' 
         date="July 2020 - November 2020" 
-        iconStyle={{background: "#77DD77", color: "#fff"}}
+        iconStyle={{background: "#e9d35b", color: "#fff"}}
         icon={<WorkIcon />}>
           <h3 className='vertical-timeline-element-title'>HCL Tech, New Delhi, India</h3>
           <p>Research Intern</p>
@@ -41,7 +41,7 @@ function Experience() {
       <VerticalTimeline lineColor='#3e497a'>
       <VerticalTimelineElement className='vertical-timeline-element--education' 
         date="May 2021 - June 2022" 
-        iconStyle={{background: "#77DD77", color: "#fff"}}
+        iconStyle={{background: "#e9d35b", color: "#fff"}}
         icon={<WorkIcon />}>
           <h3 className='vertical-timeline-element-title'>Qualitest, Uttar Pradesh, India</h3>
           <p>Software Test Engineer</p>
@@ -61,13 +61,13 @@ function Experience() {
       <VerticalTimeline lineColor='#3e497a'>
         <VerticalTimelineElement className='vertical-timeline-element--education' 
         date="May 2023 - July 2023" 
-        iconStyle={{background: "#77DD77", color: "#fff"}}
+        iconStyle={{background: "#e9d35b", color: "#fff"}}
         icon={<WorkIcon />}>
-          <h3 className='vertical-timeline-element-title'>Infogen Labs Inc, California, USA</h3>
-          <p>Software Developer Intern</p>
+        <h3 className='vertical-timeline-element-title'>Infogen Labs Inc, California, USA</h3>
+        <p>Software Developer Intern</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
-      </div>
+    </div>
   )
 }
 
