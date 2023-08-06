@@ -43,8 +43,10 @@ function Home() {
       <div className='rectangle-image-container'>
         <img src={RectangleImage} alt="Rectangle Image" className="rectangle-image" />
       </div>
-      <h1 className='aboutme'><center>About Me</center></h1>
+      <div className='aboutme-container'>
+      <h1 className='aboutme'>About Me</h1>
       <h2><center>I am currently pursuing a Master's of Science in Software Engineering at Stevens Institute of Technology in New Jersey. My proficiency extends across several programming languages, including JavaScript, Python, Java, C, and C++. Additionally, I hold an AWS Certified Cloud Practitioner certification. My true passion lies in working as a full stack developer, and I am enthusiastic about utilizing my skills and knowledge to excel in this field.</center></h2>
+      </div>
       <br></br>
 
       <div className='skills'>
