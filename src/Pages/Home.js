@@ -12,7 +12,6 @@ function Home() {
   const GitHubAccountUrl = 'https://github.com/atishay2305-hub';
   const LinkedInAccountUrl = 'https://www.linkedin.com/in/atishay23/';
   const mailAccountUrl = 'mailto:ajain70@stevens.edu'; 
-  const blogAccountUrl = 'https://rawdev.hashnode.dev/';
   const LinkAccountUrl = 'https://atishay23.bio.link/';
 
   return (
