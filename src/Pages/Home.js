@@ -30,9 +30,6 @@ function Home() {
             <GitHubIcon />
           </a>
           <Resume/> 
-          <a href={blogAccountUrl} target="_blank" rel="noopener noreferrer">
-            <RssFeedIcon />
-          </a>
           <a href={LinkAccountUrl} target="_blank" rel="noopener noreferrer">
             <LinkIcon />
           </a>
