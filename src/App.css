@@ -1,13 +1,17 @@
+/* app.css */
+
 .App {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  background-color: transparent; /* Set background color to transparent */
+  backdrop-filter: blur(5px); /* Add blur effect */
 }
 
 body {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px; /* Adjust the margin between the footer and the about me section */
 }

@@ -1,132 +1,135 @@
-.home {
-    width: 100%;
-    align-items: center;
-    font-family: "Arial", sans-serif;
-    color: #3e497a;
-  }
-  
-  .about {
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #21325e;
-    color: #f0f0f0;
-  }
-  
-  /* Add this to your CSS code */
-/* Update the existing .aboutme-container styles */
-.aboutme-container {
+/* Home.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #f0f0f0;
+  height: 100%;
+  background: url('../assets/bg.jpg') center/cover fixed; /* Adjust background property */
+}
+
+.app, .home {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: transparent;
+  color: #f0f0f0;
+  backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
+}
+
+.rectangle-image-container {
+  width: 50%; /* Adjust width as needed */
+  box-sizing: border-box;
   padding: 20px;
-  background-color: #f0f0f0;
+}
+
+.rectangle-image {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Change the text alignment to left */
+}
+
+.aboutme-container {
+  width: 50%; /* Adjust width as needed */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.aboutme-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to separate from other content */
+}
+
+.aboutme h1 {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust margin-bottom */
+}
+
+/* Home.css */
+
+/* Home.css */
+
+.aboutme-box p {
   font-size: 18px;
   line-height: 1.6;
-  color: #3e497a;
-}
-
-.aboutme-container h1 {
-  text-align: center; /* Center the heading within the container */
+  margin-top: 10px;
+  word-wrap: break-word; /* Add this property to enable word wrapping */
 }
 
 
-  .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: #e9d35b;
-    height: 50px;
-  }
 
-  .rectangle-image {
-    max-width: 100%;
-    height: auto;
-    /* Add any additional styling for the image as needed */
-  }
-  
-  .about .prompt {
-    width: 40%;
-    font-size: 30px;
-    margin-top: 50px; /* Add margin to create space between heading and paragraph */
-    padding: 40px; /* Add padding to create space between the paragraph and icons */
-  }
-  .prompt svg {
-    font-size: 60px;
-    margin: 5px;
-    color: white;
-  }
-  
-  .skills {
-    font-size: 35px;
+
+/* Additional Content Styles */
+.additional-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.additional-content-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to separate from other content */
+}
+
+.additional-content-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.additional-content-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .rectangle-image-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .skills h1 {
-    color: #3e497a;
-  }
-  
-  .skills .list {
-    list-style: none;
-    width: 60%;
-  }
-  
-  .list span {
-    font-size: 20px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .about h2 {
-      font-size: 40px;
-    }
-  
-    .about .prompt {
-      margin-top: 10px;
-      font-size: 20px;
-      width: 80%;
-    }
-  
-    .skills {
-      text-align: center;
-    }
-    .list {
-      padding: 0;
-    }
-  
-    .skills h2 {
-      font-size: 30px;
-    }
+    padding: 10px;
   }
 
-
-  /* Home.css */
-.icon-links {
-  display: flex;
-  gap: 1rem;
-  font-size: 24px;
+  .aboutme-container {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .aboutme-box,
+  .additional-content-box {
+    margin-bottom: 10px;
+  }
 }
 
-.Resume {
-  display: inline-block;
-  margin-left: 1rem;
-  font-size: 16px;
-  color: #000; /* Adjust the color to your preference */
-  text-decoration: none;
-  border: 1px solid #000; /* Add a border if you want to make it look like a button */
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+
+/* Home.css */
+
+/* ... Your existing styles ... */
+
+.experience {
+  color: black; /* Set text color to black */
 }
 
-.Resume:hover {
-  background-color: #000;
-  color: #fff;
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element-content {
+  color: black; /* Set text color to black for timeline elements */
 }
+
+/* ... Your existing styles ... */
