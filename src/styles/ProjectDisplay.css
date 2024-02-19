@@ -36,19 +36,14 @@
 }
 
 /* New class for objective styling */
-/* ProjectDisplay.css */
-
 .project-objective {
   font-size: 24px;
   color: black;
   margin-top: 20px;
-  padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: justify; /* Align text straight */
-  text-align-last: left; /* Align last line to the left for better readability */
+  padding: 10px; /* Add padding */
+  margin-left: 20px; /* Add left margin */
+  margin-right: 20px; /* Add right margin */
 }
-
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {

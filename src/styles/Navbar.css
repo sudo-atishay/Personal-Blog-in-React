@@ -47,6 +47,7 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 100px;
+  display: none;
 }
 
 #open a {
@@ -54,19 +55,13 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 70px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .toggleButton {
-    display: flex;
+  .navbar .links {
+    display: none; /* Hide the links in the default state */
   }
 
-  #close a {
-    display: block; /* Show the links in the mobile menu */
+  #open .links {
+    display: flex; /* Display the links inside the hamburger menu on smaller screens */
   }
 }
 

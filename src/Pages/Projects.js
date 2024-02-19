@@ -3,6 +3,7 @@ import ProjectItem from '../Components/ProjectItem';
 import { ProjectList } from '../helpers/ProjectList';
 import "../styles/Projects.css";
 
+
 function Projects() {
   return (
     <div className='projects'>

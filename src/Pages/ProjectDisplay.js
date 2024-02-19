@@ -4,6 +4,7 @@ import { ProjectList } from "../helpers/ProjectList";
 import "../styles/ProjectDisplay.css";
 import "../styles/Footer.css";
 
+
 function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];

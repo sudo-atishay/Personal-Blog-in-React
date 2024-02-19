@@ -9,16 +9,18 @@ function Navbar() {
 
     useEffect(() => {
         setExpandNavbar(false);
-    }, [location])
+    }, [location]);
+
+    const toggleNavbar = () => {
+        setExpandNavbar((prev) => !prev);
+    };
 
     return (
         <div className="navbar" id={expandNavbar ? "open" : "close"}>
             {/* Conditionally render the toggle button based on screen width */}
             {window.innerWidth <= 600 && (
                 <div className='toggleButton'>
-                    <button onClick={() => {
-                        setExpandNavbar((prev) => !prev)
-                    }}>
+                    <button onClick={toggleNavbar}>
                         <ReorderIcon />
                     </button>
                 </div>
@@ -30,7 +32,7 @@ function Navbar() {
                 <Link to="/experience">Experience</Link>
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbar;
