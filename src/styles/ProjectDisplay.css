@@ -4,6 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .project {
@@ -17,7 +18,7 @@
 }
 
 .project h1 {
-  color: white;
+  color: black;
   font-size: 35px;
   margin-top: 20px;
 }
@@ -30,9 +31,24 @@
 
 .project p {
   font-size: 24px;
-  color: white;
+  color: black;
   margin-top: 20px;
 }
+
+/* New class for objective styling */
+/* ProjectDisplay.css */
+
+.project-objective {
+  font-size: 24px;
+  color: black;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify; /* Align text straight */
+  text-align-last: left; /* Align last line to the left for better readability */
+}
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -40,7 +56,8 @@
     font-size: 24px;
   }
 
-  .project p {
+  .project p,
+  .project-objective {
     font-size: 18px;
   }
 }

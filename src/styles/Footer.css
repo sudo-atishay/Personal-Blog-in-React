@@ -12,19 +12,27 @@
   backdrop-filter: blur(5px); /* Add blur effect */
 }
 
-.socialMedia svg {
-  color: white;
+.socialMedia a {
+  color: black;
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+.socialMedia a:hover {
+  color: #0077b5; /* Change color on hover (LinkedIn blue as an example) */
 }
 
 .footer p {
-  color: white;
+  color: black;
+  text-align: center; /* Center align the text */
+  max-width: 80%; /* Limit the maximum width to prevent bursting out of the page */
+  margin: 0 auto; /* Center the element horizontally */
 }
 
 @media only screen and (max-width: 600px) {
-  .footer svg {
+  .socialMedia a {
     font-size: 50px;
   }
 }

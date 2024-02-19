@@ -1,135 +1,146 @@
-/* Home.css */
-
-html, body {
+/* home.css */
+.body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  color: #f0f0f0;
-  height: 100%;
-  background: url('../assets/bg.jpg') center/cover fixed; /* Adjust background property */
+  color: #333;
 }
 
-.app, .home {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.home {
+  background-color: #f8f9fa;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: transparent;
-  color: #f0f0f0;
-  backdrop-filter: blur(5px); /* Add blur effect */
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+.content {
+  width: 70%;
   margin: 0 auto;
 }
 
-.rectangle-image-container {
-  width: 50%; /* Adjust width as needed */
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 48%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #aaa;
+}
+
+@media only screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.summary h1 {
+  color: #007bff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.summary-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.summary-box p.summary-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #007bff; /* Make the text blue */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Apply blue color and bold styling to the specific p tag */
+.summary-box p.blue-bold-text {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.rectangle-image-container {
+  text-align: center;
+  margin-bottom: 100px; /* Add margin-bottom to create space */
 }
 
 .rectangle-image {
-  width: 100%;
+  width: 48%;
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-}
-
-.aboutme-container {
-  width: 50%; /* Adjust width as needed */
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.aboutme-box {
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px; /* Add margin to separate from other content */
-}
-
-.aboutme h1 {
-  text-align: center;
-  margin-bottom: 10px; /* Adjust margin-bottom */
-}
-
-/* Home.css */
-
-/* Home.css */
-
-.aboutme-box p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 10px;
-  word-wrap: break-word; /* Add this property to enable word wrapping */
+  display: inline-block;
 }
 
 
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-
-/* Additional Content Styles */
-.additional-content {
+.skills-box {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.additional-content-box {
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px; /* Add margin to separate from other content */
+.skills h1 {
+  color: #007bff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.additional-content-heading {
-  text-align: center;
+.skills-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills-container ul li {
   margin-bottom: 10px;
+  text-align: left;
+  flex: 0 0 30%;
 }
 
-.additional-content-box p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-  .rectangle-image-container {
+@media only screen and (max-width: 800px) {
+  .skills-box {
     width: 100%;
-    padding: 10px;
   }
 
-  .aboutme-container {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .aboutme-box,
-  .additional-content-box {
-    margin-bottom: 10px;
+  .skills-container ul li {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
   }
 }
-
-
-/* Home.css */
-
-/* ... Your existing styles ... */
 
 .experience {
-  color: black; /* Set text color to black */
+  color: black;
+  border: 2px solid black;
+}
+
+.vertical-timeline-element-content {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.vertical-timeline-element-content-arrow {
+  border: 2px solid black !important;
+  border-radius: 50% !important;
 }
 
 .vertical-timeline-element-title,
 .vertical-timeline-element-subtitle,
 .vertical-timeline-element-content {
-  color: black; /* Set text color to black for timeline elements */
+  color: black;
 }
-
-/* ... Your existing styles ... */
