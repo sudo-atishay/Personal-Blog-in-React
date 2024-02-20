@@ -1,4 +1,3 @@
-/* home.css */
 .body {
   margin: 0;
   padding: 0;
@@ -7,7 +6,8 @@
 }
 
 .home {
-  background-color: #f8f9fa;
+  background-color: #FAF8F6;
+  overflow-x: hidden;
 }
 
 .content {
@@ -37,9 +37,18 @@
 
 .summary h1 {
   color: #007bff;
+  margin-top: 100px;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.summary-box {
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 .summary-box p {
@@ -47,33 +56,60 @@
   line-height: 1.6;
   margin-top: 10px;
 }
-
 .summary-box p.summary-text {
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.6;
-  margin-top: 10px;
-  color: #007bff; /* Make the text blue */
-  font-weight: bold; /* Make the text bold */
-}
-
-/* Apply blue color and bold styling to the specific p tag */
-.summary-box p.blue-bold-text {
+  margin-top: -100px;
   color: #007bff;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: justify; 
+  animation: typingAnimation 3s steps(40, end), fadeIn 1.5s;
 }
+
+
+
+@keyframes typingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .rectangle-image-container {
   text-align: center;
-  margin-bottom: 100px; /* Add margin-bottom to create space */
+  margin-bottom: 100px;
 }
 
 .rectangle-image {
-  width: 48%;
+  width: 30%;
   max-width: 100%;
-  height: auto;
+  margin-top: 100px;
+  height: 30%; /* Set the height equal to the width */
   display: inline-block;
+  border-radius: 50%; /* Use border-radius 50% to create a circle */
 }
 
+
+@media only screen and (max-width: 800px) {
+  .rectangle-image {
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 50px; /* Adjust the margin-top as needed */
+  }
+}
 
 .skills-container {
   width: 100%;
@@ -86,13 +122,13 @@
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: left;
 }
 
 .skills h1 {
   color: #007bff;
-  font-size: 30px;
+  font-size: 36px; 
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -123,24 +159,62 @@
   }
 }
 
+.projects {
+  scroll-margin-top: 100px;
+  margin-bottom: 30px; /* Add margin-bottom to create space after projects section */
+}
+
 .experience {
-  color: black;
-  border: 2px solid black;
+  scroll-margin-top: 130px; /* Adjust the value based on the desired space between sections */
+  width: 100%; /* Stretch from edge to edge */
+}
+
+.vertical-timeline-element {
+  margin-bottom: 40px;
 }
 
 .vertical-timeline-element-content {
-  border: 2px solid black;
+  border: 2px solid #007bff;
   border-radius: 8px;
   padding: 20px;
+  position: relative;
 }
 
 .vertical-timeline-element-content-arrow {
-  border: 2px solid black !important;
+  border: 1px solid #007bff !important;
   border-radius: 50% !important;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 
-.vertical-timeline-element-title,
-.vertical-timeline-element-subtitle,
-.vertical-timeline-element-content {
-  color: black;
+
+.achievements-container {
+  text-align: center;
+}
+
+.achievements-box {
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.achievements-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements-box ul li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.experience {
+  color: #333;
+  border: 2px solid black;
+  border-radius: 8px;
 }

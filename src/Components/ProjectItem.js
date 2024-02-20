@@ -1,14 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-function ProjectItem({ image, name, id }) {
-  const navigate = useNavigate();
+function ProjectItem({ image, name, id, githubRepoURL }) {
+  const handleProjectClick = () => {
+    window.open(githubRepoURL, "_blank");
+  };
+
   return (
     <div
       className="projectItem"
-      onClick={() => {
-        navigate("/project/" + id);
-      }}
+      onClick={handleProjectClick}
     >
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
       <h1> {name} </h1>

@@ -1,35 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/Navbar.css";
-import ReorderIcon from '@material-ui/icons/Reorder';
 
 function Navbar() {
-    const [expandNavbar, setExpandNavbar] = useState(false);
-    const location = useLocation();
+    const projectsRef = useRef(null); // Create a ref for the Projects section
+    const experienceRef = useRef(null); // Create a ref for the Experience section
 
-    useEffect(() => {
-        setExpandNavbar(false);
-    }, [location]);
-
-    const toggleNavbar = () => {
-        setExpandNavbar((prev) => !prev);
+    const scrollToRef = (ref) => {
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
     };
 
     return (
-        <div className="navbar" id={expandNavbar ? "open" : "close"}>
-            {/* Conditionally render the toggle button based on screen width */}
-            {window.innerWidth <= 600 && (
-                <div className='toggleButton'>
-                    <button onClick={toggleNavbar}>
-                        <ReorderIcon />
-                    </button>
-                </div>
-            )}
-
+        <div className="navbar">
             <div className='links'>
-                <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/experience">Experience</Link>
+                {/* Use onClick to trigger the scroll function */}
+                <Link to="/" onClick={() => scrollToRef(projectsRef)}>Home</Link>
+                {/* Use onClick to trigger the scroll function */}
+                <Link to="/" onClick={() => scrollToRef(projectsRef)}>Projects</Link>
+                {/* Use onClick to trigger the scroll function */}
+                <Link to="/" onClick={() => scrollToRef(experienceRef)}>Experience</Link>
             </div>
         </div>
     );
