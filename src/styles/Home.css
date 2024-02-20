@@ -6,13 +6,24 @@
 }
 
 .home {
-  background-color: #FAF8F6;
+  background-color: #23263b;
   overflow-x: hidden;
 }
 
 .content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
   width: 70%;
-  margin: 0 auto;
+  max-width: 1200px; /* Optional: Set a max-width for better readability on larger screens */
 }
 
 .column-container {
@@ -52,6 +63,32 @@
 }
 
 /* ... (existing CSS) */
+/* Add this CSS for the professional summary */
+.professional-summary {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Add this CSS rule to adjust spacing for mobile devices */
+  .summary-box p.professional-summary {
+    margin-top: 10px;
+  }
+
+  /* Add this CSS rule to adjust spacing for mobile devices */
+  .role {
+    margin-top: 10px;
+  }
+}
+
+/* Adjust the font size for smaller screens */
+@media only screen and (max-width: 800px) {
+  .summary-box p.professional-summary {
+    font-size: 16px;
+  }
+}
 
 
 .summary-box {
@@ -241,7 +278,24 @@
 
 
 .experience {
-  color: #333;
-  border: 2px solid black;
   border-radius: 8px;
+  margin: 0; /* Add this line to remove margin */
+  padding: 0; /* Add this line to remove padding */
+}
+
+
+
+.experience h1 {
+  color: yellow; /* Set font color to #f5f5fa for h1 */
+}
+
+.vertical-timeline-element-date {
+  color: #f5f5fa; /* Set font color to #f5f5fa for dates */
+}
+.experience .vertical-timeline-element-title {
+  color: black; /* Set font color to black */
+}
+
+.experience p {
+  color: #23263b;
 }

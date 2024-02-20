@@ -1,4 +1,10 @@
-/* footer.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
 
 .footer {
   width: 100%;
@@ -8,27 +14,31 @@
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
-  margin-top: 50px; /* Adjust margin-top to create more space */
-  backdrop-filter: blur(5px); /* Add blur effect */
+  margin-top: 50px;
+  backdrop-filter: blur(5px);
+  background-image: url('../assets/sample.jpg'); /* Use the same background image as the navbar */
+  background-size: cover;
+  background-position: center;
 }
 
+
 .socialMedia a {
-  color: black;
+  color: #f5f5fa; /* Set font color to #f5f5fa */
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
-  transition: color 0.3s ease; /* Add a smooth color transition */
+  transition: color 0.3s ease;
 }
 
 .socialMedia a:hover {
-  color: #0077b5; /* Change color on hover (LinkedIn blue as an example) */
+  color: #0077b5;
 }
 
 .footer p {
-  color: black;
-  text-align: center; /* Center align the text */
-  max-width: 80%; /* Limit the maximum width to prevent bursting out of the page */
-  margin: 0 auto; /* Center the element horizontally */
+  color: #f5f5fa; /* Set font color to #f5f5fa */
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {

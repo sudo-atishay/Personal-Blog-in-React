@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black;
+  color: #f5f5fa; /* Set font color to #f5f5fa */
 }
 
 .projects .projectTitle {
@@ -22,8 +22,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
-
-/* MENU ITEM STYLING */
 
 .projectItem {
   border-radius: 15px;

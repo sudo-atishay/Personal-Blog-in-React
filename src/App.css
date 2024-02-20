@@ -5,9 +5,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: monospace;
-  background-color: transparent; /* Set background color to transparent */
+  font-family: 'Titillium Web', sans-serif; /* Add Titillium Web to the font stack */
+  background-color: #23263b; /* Set background color to transparent */
   backdrop-filter: blur(5px); /* Add blur effect */
+  color: #f5f5fa; /* Set font color to #f5f5fa */
 }
 
 body {
