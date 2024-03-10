@@ -41,7 +41,6 @@ function Footer() {
     <div className='footer'>
       {/* Connect with Me and Social Media Links */}
       <div className='social-media'>
-        <p>Connect</p>
         <div className='social-links'>
           {socialMediaLinks.map((link) => (
             <a key={link.name} href={link.url} target='_blank' rel='noopener noreferrer'>

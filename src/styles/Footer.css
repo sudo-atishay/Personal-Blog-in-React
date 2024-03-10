@@ -93,10 +93,10 @@ body {
 .social-button {
   background-color: #3d487a;
   color: #fff;
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 1px;
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -110,9 +110,10 @@ body {
   color: gray;
   padding: 12px;
   border: none;
-  border-radius: 7px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 20px;  
+  margin: -7.5px;
 }
 
 .scroll-button:hover {
