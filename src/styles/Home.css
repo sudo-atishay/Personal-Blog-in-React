@@ -120,9 +120,7 @@
 
 @media only screen and (max-width: 800px) {
 
-  .professional-summary{
-    text-align: center;
-  }
+
   .professional-summary p {
     font-size: 16px;
   }
