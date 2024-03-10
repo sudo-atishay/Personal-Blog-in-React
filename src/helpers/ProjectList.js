@@ -53,6 +53,21 @@ export const ProjectList = [
         skills: "Python",
         Objective: "The A*-Pathfinding-Algorithm-Project in Python implements the A* algorithm for optimal pathfinding on graphs or grids. It includes the algorithm's implementation, graph/grid representation, optional user interface, optimizations, documentation, and testing.",
         githubRepoURL: "https://github.com/atishay2305-hub/A-Pathfinding-Algorithm-Project."
+    },
+    {
+        name: "K-Means Clustering Data Analysis",
+        image: Adventure,
+        skills: "Python (Sci-kit Learn, Jupyter Notebook)",
+        Objective: "Analyzing the OpenReview website involves visually clustering subjects based on observed types, while the Code Review Clustering project focuses on categorizing over 500 code check-ins from OpenDev Code Review using architectural attributes like documentation, performance improvement, test coverage, and security enhancement.",
+        githubRepoURL: "https://github.com/atishay2305-hub/Clustering-Project"
+    },
+
+    {
+        name: "Leaflog",
+        image: Adventure,
+        skills: "Nextjs, Reactjs, Node.js, Express.js, MongoDB, GitHub",
+        Objective: "LeafLog is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application with Next.js integration, specially crafted for plant enthusiasts. Whether you are a seasoned plant parent or just starting your botanical journey, LeafLog is here to enhance your plant care experience.",
+        githubRepoURL: "https://github.com/verdetea22/LeafLog"
     }
 ];
 

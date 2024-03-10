@@ -7,7 +7,6 @@ import '../styles/Footer.css';
 import gif1 from '../assets/gif1.gif';
 import gif2 from '../assets/gif2.gif';
 import gif3 from '../assets/gif3.gif';
-import gif4 from '../assets/gif4.gif';
 
 const socialMediaLinks = [
   {
@@ -47,9 +46,16 @@ function Footer() {
 
   return (
     <div className='footer'>
-      {/* Social Media Links */}
+      {/* Connect with Me and Social Media Links */}
       <div className='social-media'>
-        <p>Thank You for Visiting</p>
+        <p>Connect</p>
+        <div className='social-links'>
+          {socialMediaLinks.map((link) => (
+            <a key={link.name} href={link.url} target='_blank' rel='noopener noreferrer'>
+              {link.icon}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Gif Images */}
@@ -57,7 +63,6 @@ function Footer() {
         <img src={gif1} alt='Gif 1' loading="lazy"/>
         <img src={gif2} alt='Gif 2' loading="lazy"/>
         <img src={gif3} alt='Gif 3' loading="lazy"/>
-        <img src={gif4} alt='Gif 4' loading="lazy"/>
       </div>
 
       {/* Scroll-to-top button */}

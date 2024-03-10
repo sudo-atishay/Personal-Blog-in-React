@@ -146,7 +146,8 @@ function Home() {
               date={project.date}
             >
               <h3 className="vertical-timeline-element-title">{project.name}</h3>
-              <p>{project.description}</p>
+              <p className="vertical-timeline-element-title"><b>Skills:</b> {project.skills}</p>
+              <p className="vertical-timeline-element-title">{project.Objective}</p>
               {/* Add any additional project details here */}
               <a href={project.githubRepoURL} target="_blank" rel="noopener noreferrer">
                 GitHub Repository
