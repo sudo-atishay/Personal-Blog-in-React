@@ -5,6 +5,10 @@ body {
   font-family: monospace;
   color: #333;
 }
+.scroll-to-top {
+  will-change: transform; /* or any other appropriate property */
+  /* ... (existing styles) */
+}
 
 .footer {
   width: 100%;
@@ -19,7 +23,11 @@ body {
   background-color: #f1675d;
   background-size: cover;
   background-position: center;
+  border-top: 3px solid #3d487a; /* Add this line to create a yellow border at the top */
 }
+
+/* rest of your styles */
+
 
 .scroll-to-top {
   position: fixed;
@@ -37,7 +45,6 @@ body {
 .scroll-to-top:hover {
   background-color: #555;
 }
-
 
 /* Adjusted size and alignment for the GIFs */
 .gif-container {
@@ -83,6 +90,31 @@ body {
   text-decoration: none;
 }
 
-.social-links a:hover {
-  color: #ddd;
+.social-button {
+  background-color: #3d487a;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: #333;
+}
+
+.scroll-button {
+  background-color: #333;
+  color: gray;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 20px;  
+}
+
+.scroll-button:hover {
+  background-color: #333;
 }
