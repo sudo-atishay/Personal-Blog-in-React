@@ -8,7 +8,6 @@ import {
   VerticalTimelineElement  
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import ProjectItem from "../Components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Projects.css";
 
@@ -44,7 +43,7 @@ function Home() {
       </div>
     <div className="top-level">
       <div className="rectangle-image-container">
-        <img src={RectangleImage} alt="Rectangle" className="rectangle-image" />
+        <img src={RectangleImage} alt="Rectangle" className="rectangle-image" loading="lazy"/>
       </div>
       <div className="summary-box">
                 <p className="summary-text" style={{ textAlign: "center" }}>

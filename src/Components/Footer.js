@@ -54,10 +54,10 @@ function Footer() {
 
       {/* Gif Images */}
       <div className='gif-container'>
-        <img src={gif1} alt='Gif 1' />
-        <img src={gif2} alt='Gif 2' />
-        <img src={gif3} alt='Gif 3' />
-        <img src={gif4} alt='Gif 4' />
+        <img src={gif1} alt='Gif 1' loading="lazy"/>
+        <img src={gif2} alt='Gif 2' loading="lazy"/>
+        <img src={gif3} alt='Gif 3' loading="lazy"/>
+        <img src={gif4} alt='Gif 4' loading="lazy"/>
       </div>
 
       {/* Scroll-to-top button */}
