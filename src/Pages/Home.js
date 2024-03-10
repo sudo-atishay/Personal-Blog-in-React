@@ -85,6 +85,7 @@ function Home() {
                 commitment to excellence is underscored by academic achievements,
                 certifications, and successful project outcomes, making me a valuable
                 asset to any software engineering team.
+                
               </p>
 </div>
 <div className="achievements-container">
