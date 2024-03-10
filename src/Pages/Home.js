@@ -48,7 +48,7 @@ function Home() {
                 <p className="summary-text" style={{ textAlign: "center" }}>
                   Atishay Jain
                   <br />
-                  <span className="role">Software Engineer</span>
+                  <span className="role">Software Engineer based in New Jersey, USA</span>
                 </p>
                 <button className="resume-download-button" onClick={handleResumeDownload}>
           RESUME
