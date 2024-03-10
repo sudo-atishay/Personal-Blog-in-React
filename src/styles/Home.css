@@ -1,14 +1,57 @@
 .body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: monospace;
   color: #333;
 }
 
 .home {
-  background-color: #23263b;
+  background-color: #f2f5f4;
+  background-size: cover;
+  background-position: center;
   overflow-x: hidden;
 }
+
+.top-level {
+  background: url("../assets/8\ Bit\ Japan\ Landscape.gif") center center/cover no-repeat;
+  width: 100%; /* Adjust the width for better responsiveness */
+  margin: 2px auto; /* Center the element */
+  margin-bottom: 50px;
+  text-align: center; /* Center text inside the element */
+  padding: 20px; /* Add padding for better appearance */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .top-level {
+    width: 100%; /* Adjust the width for mobile devices */
+  }
+}
+
+
+
+
+
+.resume-download-button {
+  display: block;
+  margin: 20px auto 20px; /* Adjust the margin-top value */
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 0; /* Set border-radius to 0 for a rectangle */
+  font-family: monospace;
+  background-color: #021945;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.resume-download-button:hover {
+  background-color: #cad4de;
+}
+
 
 .content {
   width: 100%;
@@ -23,7 +66,7 @@
 
 .about-content {
   width: 70%;
-  max-width: 1200px; /* Optional: Set a max-width for better readability on larger screens */
+  max-width: 1200px;
 }
 
 .column-container {
@@ -47,49 +90,39 @@
 }
 
 .summary h1 {
-  color: #007bff;
+  color: #021945;
   margin-top: 100px;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* ... (existing CSS) */
 
 .summary-container {
-  margin: 20px 0;
-  padding: 20px;
-
-  border-radius: 8px;
+  padding: 2px;
+  border-color: #021945;
+  border-width: 2px; /* Adjust the thickness of the border as needed */
+  border-style: solid; /* Add this line to define the border style */
+  
 }
 
-/* ... (existing CSS) */
-/* Add this CSS for the professional summary */
 .professional-summary {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 18px;
-  line-height: 1.6;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.professional-summary p {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 800px) {
-  /* Add this CSS rule to adjust spacing for mobile devices */
-  .summary-box p.professional-summary {
-    margin-top: 10px;
-  }
-
-  /* Add this CSS rule to adjust spacing for mobile devices */
-  .role {
-    margin-top: 10px;
-  }
-}
-
-/* Adjust the font size for smaller screens */
-@media only screen and (max-width: 800px) {
-  .summary-box p.professional-summary {
+  .professional-summary p {
     font-size: 16px;
   }
 }
-
 
 .summary-box {
   margin: 20px 0;
@@ -104,34 +137,33 @@
   line-height: 1.6;
   margin-top: 10px;
 }
+
 .summary-box p.summary-text {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 1.6;
   margin-top: -100px;
-  color: #007bff;
+  color: #021945;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-align: justify;
-  animation: typingAnimation 3s steps(40, end), fadeIn 1.5s;
 }
 
 .role {
-  font-size: 24px; /* Adjust the font size for the role */
-  color: #007bff;
-  font-weight: bold;
+  font-size: 45px;
+  color: #021945;
+  font-weight: bold;  
 }
 
 @media only screen and (max-width: 800px) {
   .summary-box p.summary-text {
-    font-size: 24px; /* Adjust the font size for smaller screens */
+    font-size: 24px;
   }
 
   .role {
-    font-size: 18px; /* Adjust the font size for mobile view */
+    font-size: 18px;
   }
 }
-
 
 
 @keyframes typingAnimation {
@@ -152,7 +184,6 @@
   }
 }
 
-
 .rectangle-image-container {
   text-align: center;
   margin-bottom: 100px;
@@ -162,19 +193,17 @@
   width: 30%;
   max-width: 100%;
   margin-top: 100px;
-  height: 30%; /* Set the height equal to the width */
+  height: 30%;
   display: inline-block;
-  border-radius: 50%; /* Use border-radius 50% to create a circle */
+  border-radius: 50%;
 }
-
 
 @media only screen and (max-width: 800px) {
   .rectangle-image {
-    width: 80%; /* Adjust the width as needed */
-    margin-top: 50px; /* Adjust the margin-top as needed */
+    width: 80%;
+    margin-top: 50px;
   }
 }
-
 .skills-container {
   width: 100%;
   display: flex;
@@ -183,22 +212,27 @@
 }
 
 .skills-box {
-  width: 100%;
+  width: 100vw; /* Set width to 100% of the viewport width */
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 40px;
+  border-color: #021945;
+  border-width: 2px; /* Adjust the thickness of the border as needed */
+  border-style: solid; /* Add this line to define the border style */
   text-align: left;
 }
-
 .skills h1 {
-  color: #007bff;
-  font-size: 36px; 
+  color: #021945;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+
+
 .skills-container ul {
   list-style-type: none;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   display: flex;
@@ -225,41 +259,64 @@
 
 .projects {
   scroll-margin-top: 100px;
-  margin-bottom: 30px; /* Add margin-bottom to create space after projects section */
+  margin-bottom: 30px;
 }
 
 .experience {
-  scroll-margin-top: 130px; /* Adjust the value based on the desired space between sections */
-  width: 100%; /* Stretch from edge to edge */
+  scroll-margin-top: 130px;
+  width: 100%;
 }
 
 .vertical-timeline-element {
   margin-bottom: 40px;
 }
 
+.vertical-timeline-element-icon {
+  display: none !important;
+}
+
 .vertical-timeline-element-content {
-  border: 2px solid #007bff;
+  border: 2px solid #021945;
   border-radius: 8px;
   padding: 20px;
   position: relative;
+  background-color: #fff;
+  color: #021945;
 }
+
+.vertical-timeline-element a {
+  display: inline-block;
+  margin-top: 10px; /* Adjust the margin as needed */
+  padding: 8px 12px;
+  background-color: #021945;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.vertical-timeline-element a:hover {
+  background-color: #cc0000;
+}
+
+
 
 .vertical-timeline-element-content-arrow {
-  border: 1px solid #007bff !important;
-  border-radius: 50% !important;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  display: none !important;
 }
-
 
 .achievements-container {
   text-align: center;
+  box-sizing: border-box;
+  /* padding: 10px; */
+  border-color: #021945;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .achievements-box {
-  margin: 20px 0;
+
   padding: 20px;
   font-size: 18px;
   line-height: 1.6;
@@ -276,26 +333,24 @@
   text-align: center;
 }
 
-
 .experience {
   border-radius: 8px;
-  margin: 0; /* Add this line to remove margin */
-  padding: 0; /* Add this line to remove padding */
+  margin: 0;
+  padding: 0;
 }
 
-
-
 .experience h1 {
-  color: yellow; /* Set font color to #f5f5fa for h1 */
+  color: #021945;
 }
 
 .vertical-timeline-element-date {
-  color: #f5f5fa; /* Set font color to #f5f5fa for dates */
+  color: #021945;
 }
+
 .experience .vertical-timeline-element-title {
-  color: black; /* Set font color to black */
+  color: #021945;
 }
 
 .experience p {
-  color: #23263b;
+  color: #021945;
 }

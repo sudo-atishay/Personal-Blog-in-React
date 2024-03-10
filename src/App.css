@@ -5,14 +5,13 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: 'Titillium Web', sans-serif; /* Add Titillium Web to the font stack */
-  background-color: #23263b; /* Set background color to transparent */
-  backdrop-filter: blur(5px); /* Add blur effect */
-  color: #f5f5fa; /* Set font color to #f5f5fa */
+  font-family: monospace;
+  backdrop-filter: blur(5px);
+  background-color: #f2f5f4;
 }
 
 body {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px; /* Adjust the margin between the footer and the about me section */
+  margin-bottom: 20px; 
 }

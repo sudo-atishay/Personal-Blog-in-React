@@ -1,13 +1,12 @@
+
 import React from "react";
 import "../styles/Home.css";
 import "../styles/Navbar.css";
 import RectangleImage from "../assets/rectangle.jpeg";
 import {
   VerticalTimeline,
-  VerticalTimelineElement,  
+  VerticalTimelineElement  
 } from "react-vertical-timeline-component";
-import SchoolIcon from "@material-ui/icons/School";
-import WorkIcon from "@material-ui/icons/Work";
 import "react-vertical-timeline-component/style.min.css";
 import ProjectItem from "../Components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
@@ -19,6 +18,16 @@ function Home() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+  const AchievementList = [
+    "Provoste Master's Scholarship Awardee, Stevens Institute Of Technology, NJ",
+    "Graduate Student Assistant, Stevens Institute Of Technology, NJ",
+    "IEEE Student Member and Volunteer 2023, Stevens Institute Of Technology, NJ",
+  ];
+  
+  const handleResumeDownload = () => {
+    const resumeUrl = "https://drive.google.com/file/d/1XF2gzonqskJfP34rdHAbm3_g6g1XzQcv/view?usp=sharing"; 
+    window.open(resumeUrl, "_blank");
   };
 
   return (
@@ -33,26 +42,35 @@ function Home() {
           </a>
         </div>
       </div>
-
+    <div className="top-level">
       <div className="rectangle-image-container">
         <img src={RectangleImage} alt="Rectangle" className="rectangle-image" />
       </div>
-
-      <div className="content">
-        <div className="about">
-          <div className="about-content">
-          <div className="summary-container">
-          <div className="summary-box">
+      <div className="summary-box">
                 <p className="summary-text" style={{ textAlign: "center" }}>
-                  Atishay Jain,
+                  Atishay Jain
                   <br />
                   <span className="role">Software Engineer</span>
                 </p>
+                <button className="resume-download-button" onClick={handleResumeDownload}>
+          RESUME
+        </button>
+                
               </div>
 
+              </div>
+              
+      <div className="content">
+        <div className="about">
+          <div className="about-content">
+            <div className="summary-container">
+             
+
               <h1 className="summary">
-                <center>PROFESSIONAL SUMMARY</center>
+                <center>SUMMARY</center>
+
               </h1>
+            
 
               <p className="professional-summary">
                 As a Software Engineer, I have earned a Master's in Software Engineering
@@ -70,24 +88,21 @@ function Home() {
                 certifications, and successful project outcomes, making me a valuable
                 asset to any software engineering team.
               </p>
-
-              <div className="achievements-container">
-                <h1>ACHIEVEMENTS</h1>
-                <div className="achievements-box">
-                  <ul>
-                    <li>Provoste Master's Scholarship Awardee, Stevens Institute Of Technology, NJ</li>
-                    <li>Graduate Student Assistant, Stevens Institute Of Technology, NJ</li>
-                    <li>IEEE Student Member and Volunteer 2023, Stevens Institute Of Technology, NJ</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
+</div>
+<div className="achievements-container">
+        <h1>ACHIEVEMENTS</h1>
+        <div className="achievements-box">
+          <ul>
+            {AchievementList.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
             <div className="skills-container">
               <div className="skills-box">
-                <h1 className="skills"><center>TECHNICAL SKILLS</center></h1>
+                <h1 className="skills"><center>SKILLS</center></h1>
                 <ul>
                   <li>
                     <strong>Programming:</strong> Python, JAVA, JavaScript,
@@ -124,28 +139,32 @@ function Home() {
       </div>
 
       <div className="projects" id="projects">
-        <h1>ACADEMIC PROJECTS</h1>
-        <div className="projectList">
+        <h1>PROJECTS</h1>
+        <VerticalTimeline lineColor="#3e497a">
           {ProjectList.map((project) => (
-            <ProjectItem
+            <VerticalTimelineElement
               key={project.id}
-              id={project.id}
-              name={project.name}
-              image={project.image}
-              githubRepoURL={project.githubRepoURL} // Pass the GitHub repository URL as a prop
-            />
+              className="vertical-timeline-element--project"
+              date={project.date}
+            >
+              <h3 className="vertical-timeline-element-title">{project.name}</h3>
+              <p>{project.description}</p>
+              {/* Add any additional project details here */}
+              <a href={project.githubRepoURL} target="_blank" rel="noopener noreferrer">
+                GitHub Repository
+              </a>
+            </VerticalTimelineElement>
           ))}
-        </div>
+        </VerticalTimeline>
       </div>
 
-        <div className="experience" id="experience">
+
+      <div className="experience" id="experience">
         <h1><center>EXPERIENCE</center></h1>
         <VerticalTimeline lineColor="#3e497a">
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="July 2017 - July 2021"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               ABES Institute of Technology, Uttar Pradesh, India
@@ -158,8 +177,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="June 2020 - July 2020"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               Minerva Solutions, New Delhi, India
@@ -172,8 +189,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="July 2020 - November 2020"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               HCL Tech, New Delhi, India
@@ -186,8 +201,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="May 2021 - June 2022"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               Qualitest, Uttar Pradesh, India
@@ -200,8 +213,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="September 2022 - January 2024"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               Stevens Institute of Technology, New Jersey, United States of
@@ -215,8 +226,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="May 2023 - July 2023"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
               Infogen Labs Inc, California, USA

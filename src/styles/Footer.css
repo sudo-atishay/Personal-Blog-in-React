@@ -1,14 +1,14 @@
+/* Your existing styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: monospace;
   color: #333;
 }
 
-
 .footer {
   width: 100%;
-  height: 200px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,33 +16,43 @@ body {
   padding-top: 10px;
   margin-top: 50px;
   backdrop-filter: blur(5px);
-  background-image: url('../assets/sample.jpg'); /* Use the same background image as the navbar */
+  background-color: #f1675d;
   background-size: cover;
   background-position: center;
 }
 
-
-.socialMedia a {
-  color: #f5f5fa; /* Set font color to #f5f5fa */
-  margin: 20px;
-  font-size: 70px;
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-.socialMedia a:hover {
-  color: #0077b5;
+.scroll-to-top:hover {
+  background-color: #555;
 }
 
-.footer p {
-  color: #f5f5fa; /* Set font color to #f5f5fa */
-  text-align: center;
-  max-width: 80%;
-  margin: 0 auto;
+.social-media p {
+  font-size: 24px; /* Adjust the font size for smaller screens */
+  color: #fff;
+  margin: 0 5px; /* Adjust the margin between icons */
 }
 
-@media only screen and (max-width: 600px) {
-  .socialMedia a {
-    font-size: 50px;
-  }
+/* Adjusted size and alignment for the GIFs */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align to the bottom of the container */
+  margin-top: auto; /* Push the container to the bottom of the footer */
+}
+
+.gif-container img {
+  width: 140px; /* Adjust the width of GIFs for smaller screens */
+  margin: 0 5px; /* Adjust the margin between images */
 }

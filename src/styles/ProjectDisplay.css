@@ -9,7 +9,7 @@
 
 .project {
   width: 100%;
-  flex-grow: 1; /* Allow the content to grow and push to the bottom */
+  flex-grow: 1; 
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,10 +1,11 @@
 .navbar {
   width: 100%;
   height: 100px;
-  background-image: url('../assets/sample.jpg'); /* Update with the correct path to your image */
-  background-size: cover; /* Cover the entire container with the background image */
-  background-position: center; /* Center the background image */
-  position: relative; /* Ensure the position is relative for z-index to work */
+  /* background-image: url('../assets/bgz.JPG'); */
+  background-color: #f1675d;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .links {
@@ -13,24 +14,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Set text color to contrast with the background */
+  color: #021945; /* Updated font color */
 }
 
 .navbar a {
-  color: white; /* Set text color to contrast with the background */
+  color: yellow; /* Updated font color */
   text-decoration: none;
-  margin: 10px; /* Adjusted margin for better fit on smaller screens */
-  font-size: 25px;
-  white-space: nowrap; /* Prevent line breaks on small screens */
+  margin: 10px;
+  font-size: 35px;
+  white-space: nowrap;
 }
 
-/* Add this rule to ensure links are visible on top of the background */
 .navbar a:hover {
-  color: #ffa500; /* Change the color on hover */
+  color: #021945;
 }
 
 @media only screen and (max-width: 600px) {
   .navbar .links {
-    display: flex; /* Display the links on smaller screens */
+    display: flex;
   }
 }
