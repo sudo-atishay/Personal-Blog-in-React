@@ -15,6 +15,7 @@
 .top-level {
   background: url("../assets/8\ Bit\ Japan\ Landscape.gif") center center/cover no-repeat;
   width: 100%; /* Adjust the width for better responsiveness */
+  height: 700px;
   margin: 2px auto; /* Center the element */
   margin-bottom: 50px;
   text-align: center; /* Center text inside the element */
@@ -102,14 +103,13 @@
   border-color: #021945;
   border-width: 2px; /* Adjust the thickness of the border as needed */
   border-style: solid; /* Add this line to define the border style */
-  
 }
 
 .professional-summary {
   padding: 20px;
   border-radius: 8px;
   font-size: 16px;
-  text-align: center;
+  text-align: justify;
 }
 
 .professional-summary p {
@@ -119,30 +119,32 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+  .professional-summary{
+    text-align: center;
+  }
   .professional-summary p {
     font-size: 16px;
   }
 }
-
 .summary-box {
   margin: 20px 0;
-  padding: 20px;
+  padding: 30px;
   font-size: 18px;
-  line-height: 1.6;
-  margin-top: 10px;
+  line-height: 1.2; /* Adjusted line-height for closer text */
 }
 
 .summary-box p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.2; /* Adjusted line-height for closer text */
   margin-top: 10px;
 }
 
 .summary-box p.summary-text {
-  font-size: 42px;
-  line-height: 1.6;
-  margin-top: -100px;
-  color: #021945;
+  font-size: 100px;
+  line-height: 1.2; /* Adjusted line-height for closer text */
+  margin-top: 100px;
+  color: #f2685e;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
@@ -152,18 +154,20 @@
 .role {
   font-size: 45px;
   color: #021945;
-  font-weight: bold;  
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 800px) {
   .summary-box p.summary-text {
-    font-size: 24px;
+    font-size: 42px;
+    margin-top: 10px;
   }
 
   .role {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
+
 
 
 @keyframes typingAnimation {

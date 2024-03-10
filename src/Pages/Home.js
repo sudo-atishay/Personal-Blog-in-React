@@ -43,7 +43,6 @@ function Home() {
       </div>
     <div className="top-level">
       <div className="rectangle-image-container">
-        <img src={RectangleImage} alt="Rectangle" className="rectangle-image" loading="lazy"/>
       </div>
       <div className="summary-box">
                 <p className="summary-text" style={{ textAlign: "center" }}>
