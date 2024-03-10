@@ -6,13 +6,13 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
 }
 
-
 .home {
   background-color: #f2f5f4;
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
 }
+
 
 .top-level {
   background: url("../assets/8\ Bit\ Japan\ Landscape.gif") center center/cover no-repeat;
@@ -168,7 +168,9 @@ body {
   }
 
   .role {
-    font-size: 25px;
+    font-size: 22px;
+    /* Allow the text to wrap onto the next line */
+    white-space: normal;
   }
 }
 
