@@ -11,8 +11,7 @@ const socialMediaLinks = [
   {
     name: 'GitHub',
     url: 'https://github.com/atishay2305-hub',
-  },
-  // Add more social media links as needed
+  }
 ];
 
 function Footer() {
