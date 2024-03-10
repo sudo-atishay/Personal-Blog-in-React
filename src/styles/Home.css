@@ -160,11 +160,11 @@
 @media only screen and (max-width: 800px) {
   .summary-box p.summary-text {
     font-size: 42px;
+    margin-top: 10px;
   }
 
   .role {
     font-size: 25px;
-    margin-top: 10px;
   }
 }
 
