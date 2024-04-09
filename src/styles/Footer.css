@@ -23,7 +23,6 @@ body {
   background-color: #f1675d;
   background-size: cover;
   background-position: center;
-  border-top: 3px solid #3d487a; /* Add this line to create a yellow border at the top */
 }
 
 /* rest of your styles */
