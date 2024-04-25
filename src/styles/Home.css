@@ -108,6 +108,7 @@
 
 @media (max-width: 768px) {
   .dark-mode-toggle {
-    right: 30px; /* Adjusted position towards the left */
+    right: 20px;
+    top: 20px;
   }
 }
