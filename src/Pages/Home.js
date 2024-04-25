@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Home.css";
-import "../styles/Navbar.css";
 import SkillsComponent from "../Components/skills";
 import AchievementsComponent from "../Components/achievements";
 import ImageGallery from "../Components/ImageGallery";
@@ -9,7 +8,6 @@ import ExperienceComponent from '../Components/experience';
 import EducationComponent from "../Components/education";
 import SummarySection from "../Components/summary"; // Changed import to match component name
 import "react-vertical-timeline-component/style.min.css";
-import "../styles/Projects.css";
 import Footer from '../Components/Footer'
 import rectangleImage from '../assets/rectangle.jpeg';
 import profile2 from '../assets/IMG_1707.png'

@@ -31,3 +31,9 @@
     content: "•";
     margin-right: 8px;
 }
+
+@media (max-width: 768px) {
+    .achievements-heading {
+        text-align: left;
+    }
+}

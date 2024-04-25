@@ -24,5 +24,6 @@
 
     .professional-summary {
         font-size: 1rem; /* adjust font size for mobile */
+        text-align: left;
     }
 }

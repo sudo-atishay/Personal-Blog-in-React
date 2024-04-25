@@ -57,4 +57,17 @@
 .home {
   background-color: #232b2b; /* Set background color */
   color: white; /* Set font color */
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .home {
+    overflow-x: hidden;
+  }
+
+  .summary-text {
+    font-size: 20px; /* Increased font size */
+  }
+  
+
 }
