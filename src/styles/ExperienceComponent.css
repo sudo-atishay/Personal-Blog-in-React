@@ -31,3 +31,8 @@
     line-height: 1.6;
   }
   
+  @media only screen and (max-width: 768px) {
+    .experience-item {
+      text-align: left; /* Align text left on mobile */
+    }
+  }
