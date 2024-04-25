@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Home.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import SkillsComponent from "../Components/skills";
 import AchievementsComponent from "../Components/achievements";
 import ImageGallery from "../Components/ImageGallery";
 import Gallery from "../Components/Gallery";
 import ExperienceComponent from '../Components/experience';
 import EducationComponent from "../Components/education";
-import SummarySection from "../Components/summary"; // Changed import to match component name
+import SummarySection from "../Components/summary";
 import "react-vertical-timeline-component/style.min.css";
 import Footer from '../Components/Footer'
 import rectangleImage from '../assets/rectangle.jpeg';
@@ -15,9 +17,13 @@ import profile5 from '../assets/profile5.jpg'
 import profile3 from '../assets/profile3.JPG';
 import profile4 from '../assets/profile4.jpg';
 
-
-
 function Home() {
+  const [darkMode, setDarkMode] = useState(true); // State to manage dark mode
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   const handleResumeDownload = () => {
     const resumeUrl =
       "https://drive.google.com/file/d/1XF2gzonqskJfP34rdHAbm3_g6g1XzQcv/view?usp=sharing";
@@ -27,9 +33,8 @@ function Home() {
   // Define images array
   const images = [profile3,profile4,profile5, profile2];
 
-
   return (
-    <div className="home">
+    <div className={`home ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="top-level">
         <div className="profile-section">
           <img src={rectangleImage} alt="Rectangle Image" className="circle-image" />
@@ -48,15 +53,18 @@ function Home() {
               <i className="far fa-envelope"></i>
             </a>
             <button className="resume-download-button" onClick={handleResumeDownload}>
-              RESUME
+              RESUME 📄
             </button>
           </div>
         </div>
         <div className="summary-box">
           <p className="summary-text" style={{ textAlign: "center" }}>
-            Software Engineer based in New Jersey, USA
+          👨‍💻 Software Engineer based in New Jersey, USA 🇺🇸
           </p>
         </div>
+        <button className="dark-mode-toggle" onClick={toggleDarkMode}>
+          {darkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
+        </button>
       </div>
       <hr className="divider" />
       <div className="content">

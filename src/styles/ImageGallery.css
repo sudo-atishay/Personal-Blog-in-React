@@ -21,11 +21,7 @@
   width: 100%; /* Fill the card container */
   height: auto;
   border-radius: 8px;
-}
-
-.image-card a {
-  color: white; /* Set text color to white for links */
-}
+}`
 
 .image-text {
   margin-top: 10px;

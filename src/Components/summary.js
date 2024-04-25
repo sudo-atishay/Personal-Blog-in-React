@@ -6,20 +6,7 @@ const SummarySection = () => {
         <div className="summary-container">
             <h1 className="summary">SUMMARY</h1>
             <p className="professional-summary">
-                As a Software Engineer, I have earned a Master's in Software Engineering
-                from Stevens Institute of Technology. My proficiency spans various
-                programming languages, including Python, Java, and JavaScript, with
-                expertise in full-stack development, testing methodologies, and agile
-                practices. I have excelled in impactful roles in both the USA and India,
-                demonstrating my ability to develop robust backend APIs, implement
-                serverless architectures using AWS technologies, and conduct
-                comprehensive testing with tools such as Selenium WebDriver and CircleCI.
-                My contributions include enhancing user experiences in eCommerce web
-                applications, conducting influential research on IoT in Sports, and
-                leading teams in the development of innovative applications. My
-                commitment to excellence is underscored by academic achievements,
-                certifications, and successful project outcomes, making me a valuable
-                asset to any software engineering team.
+            Welcome to my Portfolio Website! I'm a dedicated Software Engineer currently pursuing my Master's degree in New Jersey, USA. With over 2 years of professional experience, I specialize in a wide array of technologies including Python, NodeJS, ReactJS, NextJS, MongoDB, SQL, Selenium, Java, and more. Throughout my academic journey, I've actively contributed to various projects, both academic and personal. Additionally, I'm proud to hold certification as an AWS Certified Cloud Practitioner. If you'd like to collaborate on a project or discuss opportunities, feel free to reach out via my social media accounts or drop me an email. Let's connect and create something amazing together!
             </p>
         </div>
     );

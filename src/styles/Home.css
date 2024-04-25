@@ -5,6 +5,7 @@
   border-radius: 50%;
   overflow: hidden; /* Ensure the image stays within the circle */
   margin: 50px auto 20px; /* Adjusted margin */
+  border: 4px solid #f1675d; /* Border color and thickness */
 }
 
 .profile-section {
@@ -16,7 +17,6 @@
 }
 
 .social-icons a {
-  
   color: #f1675d;
   margin-right: 15px; /* Increased margin */
   font-size: 30px; /* Increased font size */
@@ -68,6 +68,40 @@
   .summary-text {
     font-size: 20px; /* Increased font size */
   }
-  
-
 }
+
+/* Add this CSS to your existing Home.css or relevant stylesheet */
+.home.dark-mode {
+  background-color: #232b2b; /* Dark mode background color */
+  color: white; /* Dark mode font color */
+}
+
+.home.light-mode {
+  background-color: #FBF0D9; /* Light mode background color */
+  color: #021945; /* Light mode font color */
+}
+
+/* Add this CSS to your existing Home.css or relevant stylesheet */
+.home.light-mode hr.divider {
+  border-color: #021945; 
+}
+
+.home.light-mode .dark-mode-toggle svg {
+  color: #f1675d; 
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.dark-mode-toggle:hover {
+  color: #f1675d;
+}
+
