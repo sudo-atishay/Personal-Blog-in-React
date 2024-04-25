@@ -1,0 +1,34 @@
+.skills-container {
+    margin: 0 auto; /* center the container horizontally */
+    padding: 20px;
+    max-width: 1000px; /* adjust max-width as needed */
+}
+
+.skills-box {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.skills {
+    font-size: 2rem; /* adjust font size as needed */
+    color: #f1675d;
+    text-align: left; /* align the heading to the left */
+    margin-bottom: 20px; /* add some space below the heading */
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 1.1rem; /* adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+/* Add bullet points */
+.skills-list li::before {
+    content: "•";
+    margin-right: 8px;
+}

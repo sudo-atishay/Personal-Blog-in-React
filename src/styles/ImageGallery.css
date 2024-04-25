@@ -1,0 +1,40 @@
+.image-gallery-container {
+  padding: 20px;
+  max-width: 1000px; /* Adjust max-width for responsiveness */
+  margin: 0 auto; /* Center the gallery */
+}
+
+.image-gallery {
+  display: flex;
+}
+
+.image-column {
+  flex: 1; /* Each column takes equal width */
+  margin-right: 10px; /* Adjust space between columns */
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%; /* Fill the card container */
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-card a {
+  color: white; /* Set text color to white for links */
+}
+
+.image-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.gallery-heading {
+  text-align: left;
+  color: #f1675d;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}

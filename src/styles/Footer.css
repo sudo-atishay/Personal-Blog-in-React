@@ -5,10 +5,6 @@ body {
   font-family: monospace;
   color: #333;
 }
-.scroll-to-top {
-  will-change: transform; /* or any other appropriate property */
-  /* ... (existing styles) */
-}
 
 .footer {
   width: 100%;
@@ -25,96 +21,20 @@ body {
   background-position: center;
 }
 
-/* rest of your styles */
 
 
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
+/* New styles for the text */
+.atishay-text {
+  color: black;
   font-size: 24px;
-  color: #fff;
-  background-color: #333;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
 }
 
-.scroll-to-top:hover {
-  background-color: #555;
-}
 
-/* Adjusted size and alignment for the GIFs */
-.gif-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Align to the bottom of the container */
-  margin-top: auto; /* Push the container to the bottom of the footer */
-}
 
-.gif-container img {
-  width: 140px; /* Adjust the width of GIFs for smaller screens */
-  margin: 0 5px; /* Adjust the margin between images */
-}
 
-/* ... (your existing styles) */
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.social-media p {
-  font-size: 24px;
-  color: #fff;
-  margin: 0 10px;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.social-links a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.social-button {
-  background-color: #3d487a;
-  color: #fff;
-  padding: 15px;
-  margin: 1px;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.social-button:hover {
-  background-color: #333;
-}
-
-.scroll-button {
-  background-color: #333;
-  color: gray;
-  padding: 12px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 20px;  
-  margin: -5px;
-}
-
-.scroll-button:hover {
-  background-color: #333;
+.divider {
+  width: 70%; /* Set the width to 60% */
+  margin: 0 auto; /* Center the divider */
+  border: none; /* Remove default border */
+  border-top: 2px solid #ffffff; /* Set the border style */
 }

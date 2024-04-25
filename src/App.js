@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

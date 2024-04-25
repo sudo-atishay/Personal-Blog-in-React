@@ -1,0 +1,33 @@
+.achievements-container {
+    text-align: justify;
+    margin: 0 auto; /* center the container horizontally */
+    padding: 20px;
+    max-width: 1000px; /* adjust max-width as needed */
+}
+
+.achievements-heading {
+    font-size: 2rem; /* adjust font size as needed */
+    color: #f1675d;
+}
+
+.achievements-box {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.achievement-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievement-item {
+    font-size: 1.1rem; /* adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+/* Add bullet points */
+.achievement-item::before {
+    content: "•";
+    margin-right: 8px;
+}
