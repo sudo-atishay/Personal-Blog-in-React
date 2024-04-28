@@ -26,7 +26,7 @@ function Home() {
 
   const handleResumeDownload = () => {
     const resumeUrl =
-      "https://drive.google.com/file/d/1XF2gzonqskJfP34rdHAbm3_g6g1XzQcv/view?usp=sharing";
+      "https://drive.google.com/file/d/1zk3i5IAMllFJW1puZ3HYjN2U6jqAjsNB/view?usp=drive_link";
     window.open(resumeUrl, "_blank");
   };
 
