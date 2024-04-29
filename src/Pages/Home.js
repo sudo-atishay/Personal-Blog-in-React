@@ -49,10 +49,6 @@ function Home() {
             <a href="https://github.com/atishay2305-hub" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            {/* Add Medium logo */}
-            <a href="https://medium.com/@atishay23" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-medium"></i>
-            </a>
             <a href="mailto:atishay23@email.com">
               <i className="far fa-envelope"></i>
             </a>
@@ -97,3 +93,4 @@ function Home() {
 }
 
 export default Home;
+
