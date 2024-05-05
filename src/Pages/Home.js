@@ -40,9 +40,6 @@ function Home() {
           <img src={rectangleImage} alt="Rectangle Image" className="circle-image" />
           <p className="name">Atishay Jain</p>
           <div className="social-icons">
-            <a href="https://twitter.com/atishay23" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
             <a href="https://www.linkedin.com/in/atishay23/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
