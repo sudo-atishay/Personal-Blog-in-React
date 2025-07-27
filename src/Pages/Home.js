@@ -56,7 +56,7 @@ function Home() {
         </div>
         <div className="summary-box">
           <p className="summary-text" style={{ textAlign: "center" }}>
-          👨‍💻 Software Engineer based in New Jersey, USA 🇺🇸
+          👨‍💻 Software Developer based in USA 🇺🇸
           </p>
         </div>
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>

@@ -9,7 +9,6 @@ const EducationComponent = () => {
           <h2 className="education-title">Master of Science in Software Engineering</h2>
           <p>Stevens Institute of Technology | Hoboken, NJ</p>
           <p>September 2022 - May 2024</p>
-          <p>GPA: 3.85</p>
         </div>
       </div>
       <div className="education-item">
