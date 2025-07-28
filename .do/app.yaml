@@ -1,0 +1,14 @@
+name: personal-blog-in-react
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: atishay2305-hub/Personal-Blog-in-React
+    branch: master
+  run_command: npm start
+  build_command: npm run build
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+  - path: /
