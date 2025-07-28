@@ -9,9 +9,9 @@ const Home = () => {
         
         <div className="social-links">
           <a href="https://github.com/atishay2305-hub" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/atishay-jain" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://leetcode.com/atishay2305" target="_blank" rel="noopener noreferrer">LeetCode</a>
-          <a href="mailto:atishay.jain@example.com">Email</a>
+          <a href="https://www.linkedin.com/in/atishay23" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://leetcode.com/u/ajain70/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+          <a href="mailto:atishay2305@gmail.com">Email</a>
         </div>
         
         <div className="current-status">
