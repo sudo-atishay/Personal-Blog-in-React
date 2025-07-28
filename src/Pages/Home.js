@@ -5,7 +5,7 @@ const Home = () => {
     <div className="app-container">
       <div className="main-content">
         <h1 className="intro">Hi, I'm Atishay Jain</h1>
-        <h2 className="title">Dev, Tech-Enthusiast & an Active Learner</h2>
+        <h2 className="title">Dev, Tech-Enthusiast & Learner</h2>
         
         <div className="social-links">
           <a href="https://github.com/atishay2305-hub" target="_blank" rel="noopener noreferrer">GitHub</a>
