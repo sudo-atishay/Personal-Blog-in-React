@@ -13,7 +13,7 @@ function Home() {
           <img src={rectangleImage} alt="Atishay's profile" className="circle-image" />
           <p className="name">Atishay Jain</p>
           <p className="impact-statement">
-            Currently working as a Software Developer in USA 🇺🇸 / on a path to learn Quant/Math/ML 📊🔢🤖
+            Currently working as a Software Developer in USA / on a path to learn Quant/Math/ML 
           </p>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/atishay23/" target="_blank" rel="noopener noreferrer">
