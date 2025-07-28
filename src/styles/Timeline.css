@@ -1,0 +1,201 @@
+/* Timeline Component - Slate Theme */
+.timeline-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+/* White vertical timeline line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%);
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+/* Alternating layout */
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Rectangle/Square icons for different types */
+.timeline-icon {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ffffff;
+  background: #475569;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.work-icon {
+  border-radius: 4px; /* Square/rectangle for work */
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}
+
+.education-icon {
+  border-radius: 6px; /* Slightly rounded rectangle for education */
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 0 30px;
+}
+
+.timeline-card {
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(100, 116, 139, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.timeline-organization {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.timeline-location {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Work experience styling */
+.timeline-item.work .timeline-card {
+  border-left: 4px solid #64748b;
+}
+
+/* Education styling */
+.timeline-item.education .timeline-card {
+  border-left: 4px solid #7c3aed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 30px;
+  }
+  
+  .timeline-marker {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    flex-direction: row !important;
+    padding-left: 70px;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .timeline-heading {
+    font-size: 2rem;
+  }
+  
+  .timeline-card {
+    padding: 20px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-container {
+    padding: 20px 10px;
+  }
+  
+  .timeline-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+    padding-left: 60px;
+  }
+  
+  .timeline-line {
+    left: 25px;
+  }
+  
+  .timeline-marker {
+    left: 25px;
+  }
+  
+  .timeline-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -2,41 +2,41 @@ import React from 'react';
 import '../styles/skills.css';
 
 const SkillsComponent = () => {
+  const skills = [
+    { name: 'Python', level: 95 },
+    { name: 'Algorithms', level: 90 },
+    { name: 'Linux', level: 85 },
+    { name: 'AWS', level: 80 },
+    { name: 'Telecommunications', level: 75 },
+    { name: 'AI-driven Development', level: 85 },
+    { name: 'Software Testing', level: 88 },
+    { name: 'JavaScript', level: 92 },
+    { name: 'MERN Stack', level: 87 },
+    { name: 'Java', level: 85 },
+    { name: 'Git', level: 90 },
+    { name: 'SQL', level: 88 },
+    { name: 'NoSQL', level: 82 }
+  ];
+
   return (
-      <div className="skills-container">
-          <div className="skills-box">
-              <h1 className="skills">SKILLS</h1>
-              <ul className="skills-list">
-                  <li>
-                      <strong>Programming:</strong> Python, JAVA, JavaScript,
-                      JSON, SQL, C, C++, Bash, HTML, CSS
-                  </li>
-                  <li>
-                      <strong>Technologies:</strong> GIT, GitHub, AWS, Linux,
-                      React.js, Node.js, Express.js, Socket.IO, jQuery, Flask,
-                      Docker
-                  </li>
-                  <li>
-                      <strong>Data Tools and Databases:</strong> NumPy,
-                      Scikit-Learn, Pandas, Matplotlib, MySQL, PostgreSQL,
-                      MongoDB, AWS DynamoDB
-                  </li>
-                  <li>
-                      <strong>Testing:</strong> Postman, Selenium WebDriver,
-                      BeautifulSoup, CircleCI, Junit, PyTest, PyLint, Code
-                      Coverage, Apache JMeter, Burp Suite
-                  </li>
-                  <li>
-                      <strong>Certifications:</strong> AWS Certified Cloud
-                      Practitioner, Datacamp: Data Manipulation in SQL
-                  </li>
-                  <li>
-                      <strong>Functional:</strong> Agile, SCRUM, Waterfall, SDLC,
-                      STLC, JIRA, Bitbucket, Confluence, Microsoft Office
-                  </li>
-              </ul>
-          </div>
+    <div className="skills-container">
+      <h1 className="skills-heading">SKILLS</h1>
+      <div className="skills-graph">
+        <div className="skills-line">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-node" style={{ '--skill-level': skill.level }}>
+              <div className="skill-bar">
+                <div className="skill-fill" style={{ width: `${skill.level}%` }}></div>
+              </div>
+              <div className="skill-label">
+                <span className="skill-name">{skill.name}</span>
+                <span className="skill-percentage">{skill.level}%</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+    </div>
   );
 };
 
