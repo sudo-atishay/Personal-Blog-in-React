@@ -16,7 +16,7 @@ const Home = () => {
         
         <div className="current-status">
           <div className="status-item">
-            <span className="arrow">&gt;</span> Working at Amdocs, Gerogia, USA as a Software Developer
+            <span className="arrow">&gt;</span> Working as a Software Developer at Amdocs, Gerogia, USA
           </div>
           <div className="status-item">
             <span className="arrow">&gt;</span> Master's Graduate from Stevens Institute of Technology, NJ in Software Engineering
