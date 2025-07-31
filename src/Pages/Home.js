@@ -38,9 +38,6 @@ const Home = () => {
             <span className="personal-label">Tech I Love Using:</span> Mac, Android, PlayStation, Plex, Spotify
           </div>
           <div className="personal-item">
-            <span className="personal-label">Tech I Avoid (and recommend avoiding):</span> Overhyped AI Products, Microsoft Products
-          </div>
-          <div className="personal-item">
             <span className="personal-label">Tech Stack Ethos:</span> Minimal, open, and privacy-conscious by default
           </div>
           
