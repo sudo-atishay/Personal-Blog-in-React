@@ -22,7 +22,7 @@ const Home = () => {
             <span className="arrow">&gt;</span> Master's Graduate in Software Engineering from Stevens Institute of Technology, NJ 
           </div>
           <div className="status-item">
-            <span className="arrow">&gt;</span> Current Pursuits: Machine Learning, Maths, Algorithms & Problem Solving
+            <span className="arrow">&gt;</span> Current Pursuits: Machine Learning, Algorithms & Problem Solving
           </div>
         </div>
         
