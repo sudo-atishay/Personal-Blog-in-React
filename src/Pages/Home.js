@@ -8,7 +8,7 @@ const Home = () => {
         <h2 className="title">Dev, Tech-Enthusiast & Learner</h2>
         
         <div className="social-links">
-          <a href="https://github.com/atishay2305-hub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/sudo-atishay" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/atishay23" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://leetcode.com/u/ajain70/" target="_blank" rel="noopener noreferrer">LeetCode</a>
           <a href="mailto:atishay2305@gmail.com">Email</a>
