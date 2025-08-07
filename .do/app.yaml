@@ -3,7 +3,7 @@ services:
 - name: web
   source_dir: /
   github:
-    repo: atishay2305-hub/Personal-Blog-in-React
+    repo: sudo-atishay/Personal-Blog-in-React
     branch: master
   run_command: yarn start
   build_command: yarn build
