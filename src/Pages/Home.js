@@ -22,38 +22,6 @@ const Home = () => {
             <span className="arrow">&gt;</span> <span className="label">Current Journey:</span> Advancing skills in AI, Algorithms & Problem Solving
           </div>
         </div>
-        
-        <div className="personal-section">
-          <h3 className="personal-title">Mini-Blog:</h3>
-          <div className="personal-item">
-            <span className="personal-label">Game with 500+ Hours:</span> Red Dead Redemption 2
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Running:</span> Over 6 years of running, 2000+ km logged
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Things that excite me:</span> Artificial Intelligence & Open Source Software
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Course I am studying:</span> Andrej Karpathy Neural Networks
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Tech Stack Ethos:</span> Minimal, open, and privacy-conscious by default
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Coffee Preference:</span> Dark roast, minimal sugar, maximum focus
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Programs I Use:</span> Bitwarden, Plex, Spotify, Cursor, Brave, Raycast, LaTeX via Overleaf
-          </div>
-          <div className="personal-item">
-            <span className="personal-label">Personal Tech:</span> MacBook, Android Phones, PS4
-          </div>
-          
-          <div className="updated-year">
-            Updated 2025
-          </div>
-        </div>
       </div>
     </div>
   );
