@@ -8,11 +8,13 @@ const Navbar = ({ onSectionChange, darkMode, toggleDarkMode }) => {
         <span className="navbar-title">Atishay Jain</span>
       </div>
       <div className="navbar-center">
+        <button className="nav-btn" onClick={() => onSectionChange('home')}>Home</button>
         <button className="nav-btn" onClick={() => onSectionChange('education')}>Education</button>
         <button className="nav-btn" onClick={() => onSectionChange('experience')}>Experience</button>
+        <button className="nav-btn" onClick={() => onSectionChange('contact')}>Contact</button>
       </div>
       <div className="navbar-right">
-        <button className="toggle-btn" onClick={toggleDarkMode}>
+        <button className="toggle-btn" onClick={toggleDarkMode} aria-label="Toggle theme">
           {darkMode ? '🌙' : '☀️'}
         </button>
       </div>

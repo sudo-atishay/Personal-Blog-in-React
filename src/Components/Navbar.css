@@ -8,8 +8,11 @@
   padding: 18px 32px;
   background: rgba(30, 34, 44, 0.95);
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  position: static;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   transition: background 0.3s;
+  backdrop-filter: blur(6px);
 }
 
 .navbar.dark {
@@ -26,6 +29,7 @@
 .navbar-center {
   display: flex;
   gap: 18px;
+  align-items: center;
 }
 
 .nav-btn {
@@ -38,6 +42,10 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+}
+
+.navbar-center .nav-btn {
+  white-space: nowrap;
 }
 
 .nav-btn:hover {
