@@ -1,3 +1,11 @@
+body.light-mode {
+  background: #f8fafc;
+  color: #222;
+}
+
+.app-container.light {
+  background: none;
+}
 body.dark-mode {
   background: linear-gradient(-45deg, #181818, #23232b, #1a2323, #23231a);
   color: #e0e0e0;
@@ -112,12 +120,18 @@ body::after {
   letter-spacing: -0.02em;
   line-height: 1.05;
 }
+.light-mode .intro {
+  color: #2d7c7c;
+}
 
 .title {
   font-size: 1.05rem;
   font-weight: 400;
   color: #9fb3ad;
   margin-bottom: 18px;
+}
+.light-mode .title {
+  color: #555;
 }
 
 .social-links {
@@ -140,6 +154,11 @@ body::after {
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
+}
+.light-mode .social-links a {
+  color: #e85d04;
+  border: 2px solid #e0e0e0;
+  background: #fff;
 }
 
 .social-links a::before {
@@ -288,12 +307,16 @@ body::after {
 
 /* Add some sparkle to the main content */
 .main-content {
-  max-width: 800px;
+  max-width: 760px;
   width: 100%;
-  text-align: left;
-  position: relative;
+  margin: 0 auto;
+  padding: 56px 20px;
+  box-sizing: border-box;
 }
-
+.light-mode .main-content {
+  background: #fff;
+  color: #222;
+}
 .main-content::before {
   content: '';
   position: absolute;

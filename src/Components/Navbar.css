@@ -1,3 +1,20 @@
+.navbar.light {
+  background: #f8fafc;
+  box-shadow: 0 2px 12px rgba(220,220,220,0.12);
+}
+
+.navbar.light .navbar-title {
+  color: #e85d04;
+}
+
+.navbar.light .nav-btn {
+  color: #222;
+}
+
+.navbar.light .nav-btn:hover {
+  background: #e0e0e0;
+  color: #e85d04;
+}
 .navbar {
   width: 100%;
   max-width: 900px;

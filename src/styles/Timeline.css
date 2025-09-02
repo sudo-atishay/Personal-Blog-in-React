@@ -1,3 +1,28 @@
+.timeline-container.light {
+  background: none;
+}
+
+.timeline-card.light {
+  background: #f8fafc;
+  border: 1px solid #e0e0e0;
+  color: #222;
+}
+
+.timeline-title.light {
+  color: #e85d04;
+}
+
+.timeline-organization.light {
+  color: #222;
+}
+
+.timeline-location.light {
+  color: #555;
+}
+
+.timeline-date.light {
+  color: #888;
+}
 /* Timeline Component - Slate Theme */
 .timeline-container {
   padding: 40px 20px;

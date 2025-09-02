@@ -9,7 +9,7 @@ const Timeline = ({ type }) => {
       title: 'Software Developer',
       organization: 'Amdocs',
       location: 'Alpharetta, GA, USA',
-      date: 'June 2024 – Present',
+  date: 'June 2024 – August 2025',
       description: 'API automation, CI/CD, Python utilities.'
     },
     {

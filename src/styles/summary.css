@@ -1,3 +1,15 @@
+.summary-container.light {
+  background: #fff;
+  color: #222;
+}
+
+.summary.light {
+  color: #e85d04;
+}
+
+.professional-summary.light {
+  color: #222;
+}
 .summary-container {
   margin: 32px 0 32px 0;
   padding: 24px 32px;
