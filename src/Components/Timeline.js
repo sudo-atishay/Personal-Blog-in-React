@@ -1,25 +1,25 @@
 import React from 'react';
 import '../styles/Timeline.css';
 
-const Timeline = () => {
+const Timeline = ({ type }) => {
   const timelineData = [
     {
       id: 1,
       type: 'work',
       title: 'Software Developer',
       organization: 'Amdocs',
-      location: 'Georgia, USA',
+      location: 'Alpharetta, GA, USA',
       date: 'June 2024 – Present',
-      description: 'Current position developing software solutions'
+      description: 'API automation, CI/CD, Python utilities.'
     },
     {
       id: 2,
       type: 'education',
       title: 'Master of Science in Software Engineering',
       organization: 'Stevens Institute of Technology',
-      location: 'Hoboken, NJ',
-      date: 'September 2022 - May 2024',
-      description: 'Advanced studies in software engineering principles and practices'
+      location: 'Hoboken, NJ, USA',
+      date: 'May 2024',
+      description: 'GPA: 3.88'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Timeline = () => {
       organization: 'Infogen Labs',
       location: 'California, USA',
       date: 'May 2023 – July 2023',
-      description: 'Internship focused on software development'
+      description: 'Backend APIs, AWS Lambda, DynamoDB.'
     },
     {
       id: 4,
@@ -36,8 +36,8 @@ const Timeline = () => {
       title: 'Software Engineer in Test',
       organization: 'Qualitest',
       location: 'Uttar Pradesh, India',
-      date: 'May 2021 – June 2022',
-      description: 'Quality assurance and testing engineering'
+      date: 'July 2021 – July 2022',
+      description: 'UI/API automation, Agile testing.'
     },
     {
       id: 5,
@@ -45,35 +45,36 @@ const Timeline = () => {
       title: 'Bachelor of Technology in Information Technology',
       organization: 'ABES Institute of Technology',
       location: 'Uttar Pradesh, India',
-      date: 'May 2024 - July 2021',
-      description: 'Undergraduate studies in Information Technology'
+      date: 'July 2021',
+      description: ''
     },
     {
       id: 6,
       type: 'work',
       title: 'Research Intern',
-      organization: 'HCL Tech',
-      location: 'Noida, India',
-      date: 'July 2020 – November 2020',
-      description: 'Research and development internship'
+      organization: 'HCL Technologies',
+      location: 'Uttar Pradesh, India',
+      date: 'April 2020 – July 2020',
+      description: 'Software development & documentation.'
     },
     {
       id: 7,
       type: 'work',
-      title: 'Software Engineer Intern',
-      organization: 'Minerva Solutions',
-      location: 'Delhi, India',
-      date: 'March 2020 – July 2020',
-      description: 'Software engineering internship'
+      title: 'Web Developer Intern',
+      organization: 'Minerva Technologies',
+      location: 'New Delhi, India',
+      date: 'February 2020 – May 2020',
+      description: 'Frontend/backend web development.'
     }
   ];
 
+  const filteredData = type ? timelineData.filter(item => item.type === type) : timelineData;
+
   return (
     <div className="timeline-container">
-      <h1 className="timeline-heading">EDUCATION & EXPERIENCE</h1>
       <div className="timeline">
         <div className="timeline-line"></div>
-        {timelineData.map((item, index) => (
+        {filteredData.map((item, index) => (
           <div key={item.id} className={`timeline-item ${item.type}`}>
             <div className="timeline-marker">
               <div className={`timeline-icon ${item.type}-icon`}></div>
@@ -84,7 +85,7 @@ const Timeline = () => {
                 <h3 className="timeline-organization">{item.organization}</h3>
                 <p className="timeline-location">{item.location}</p>
                 <p className="timeline-date">{item.date}</p>
-                <p className="timeline-description">{item.description}</p>
+                {item.description && <p className="timeline-description">{item.description}</p>}
               </div>
             </div>
           </div>

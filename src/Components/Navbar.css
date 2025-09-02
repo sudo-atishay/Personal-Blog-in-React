@@ -1,0 +1,78 @@
+.navbar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  background: rgba(30, 34, 44, 0.95);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  position: static;
+  transition: background 0.3s;
+}
+
+.navbar.dark {
+  background: rgba(18, 18, 22, 0.98);
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  letter-spacing: 1px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: #222;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #feca57;
+  padding: 6px 12px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.toggle-btn:hover {
+  background: #222;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 8px;
+  }
+  .navbar-title {
+    font-size: 1.1rem;
+  }
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  .toggle-btn {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+}
