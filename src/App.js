@@ -1,98 +1,84 @@
-
 import React from "react";
 import "./main.css";
 
-
-function App() {
+export default function App() {
   return (
-    <div>
-      {/* Navbar */}
-      <nav className="navbar">
-        {/* If favicon is present, remove AJ logo */}
-        <ul className="navbar-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <main>
+      <div className="wrap">
+        {/* Hero */}
+        <header>
+          <h1>Atishay Jain</h1>
+          <p className="tagline">
+            Software Engineer — backend, automation, and developer experience
+          </p>
+          <nav className="socials" aria-label="Social links">
+            <img src="/favicon.ico" alt="favicon" style={{ width: 32, height: 32, verticalAlign: "middle", marginRight: 8 }} />
+            <a href="mailto:atishay2305@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/atishay23/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a href="https://github.com/sudo-atishay" target="_blank" rel="noreferrer noopener">GitHub</a>
+          </nav>
+        </header>
 
-      {/* Hero Section */}
-      <section id="hero" className="hero-section">
-        <h1 className="hero-title">HEY, I'M <span className="highlight">ATISHAY JAIN</span></h1>
-        <p className="hero-summary">
-            Dev, Learner &amp; Tech-Enthusiast
-        </p>
-      </section>
+        {/* About */}
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            Software engineer with 3+ years of experience focused on backend
+            systems, CI/CD, and automation. I like building reliable services,
+            hardening data workflows, and improving developer productivity with
+            clean tooling and observability.
+          </p>
+        </section>
 
-      {/* About Section */}
-      <section id="about" className="about-section">
-        <h2 className="section-title">ABOUT ME</h2>
-        <div className="about-content">
-          <div className="about-left">
-            <h3>Know About Me!</h3>
-            <p>
-              Greetings! I'm Atishay Jain, a <b>dedicated software engineer</b> with 3+ years of experience and a master's in software engineering. My expertise spans backend, automation, CI/CD, and developer experience. I thrive at the intersection of reliability and quality, designing APIs, hardening data workflows, and embedding automation that raises release confidence.
-            <p>
-              Greetings! I'm Atishay Jain, a dedicated Software Engineer with 3+ years of experience and a Master's in Software Engineering. My expertise spans Backend Development, Automation, Linux Systems, and DevOps Practices. I thrive at the intersection of Reliability and Quality—designing APIs, hardening Data Workflows, and embedding Automation Pipelines that boost Developer Productivity and Release Confidence.
+        {/* Experience */}
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <span className="role">Software Developer</span> — Amdocs,
+              Alpharetta, GA, USA
+              <span className="meta"> · June 2024 – August 2025</span>
+            </li>
+            <li>
+              <span className="role">Software Developer Intern</span> — Infogen
+              Labs, California, USA
+              <span className="meta"> · May 2023 – July 2023</span>
+            </li>
+            <li>
+              <span className="role">Software Engineer in Test</span> — Qualitest,
+              Uttar Pradesh, India
+              <span className="meta"> · July 2021 – July 2022</span>
+            </li>
+            <li>
+              <span className="role">Research Intern</span> — HCL Technologies,
+              Uttar Pradesh, India
+              <span className="meta"> · April 2020 – July 2020</span>
+            </li>
+            <li>
+              <span className="role">Web Developer Intern</span> — Minerva
+              Technologies, New Delhi, India
+              <span className="meta"> · Feb 2020 – May 2020</span>
+            </li>
+          </ul>
+        </section>
 
-              With a strong foundation in Linux and Cloud-Native Tools, I enjoy building Resilient Systems, optimizing Infrastructure, and enabling teams through streamlined DevOps Workflows. From debugging Low-Level Issues to scaling Backend Services, I approach problems with Curiosity and Precision.
-
-              I value Collaboration and Continuous Improvement, whether it’s mentoring peers, refining Deployment Strategies, or enhancing Observability. Let’s connect and build Systems that make an impact—Reliable, Efficient, and Future-Ready.
-            </p>
-            </p>
-          </div>
-          <div className="about-right">
-            <h3>My Skills</h3>
-            <div className="skills-list">
-              <span>Software Development</span>
-              <span>Cloud Computing</span>
-              <span>QA Automation</span>
-              <span>Testing</span>
-              <span>Agile</span>
-              <span>Programming</span>
-            </div>
-          </div>
-        </div>
-        <a href="#contact" className="contact-btn">Contact</a>
-      </section>
-
-      {/* Experience Section */}
-      <section id="experience" className="experience-section">
-        <h2 className="section-title">EXPERIENCE</h2>
-        <ul className="experience-list">
-          <li><strong>Software Developer</strong>, Amdocs, Alpharetta, GA, USA <span className="date">(June 2024 – August 2025)</span></li>
-          <li><strong>Software Developer Intern</strong>, Infogen Labs, California, USA <span className="date">(May 2023 – July 2023)</span></li>
-          <li><strong>Software Engineer in Test</strong>, Qualitest, Uttar Pradesh, India <span className="date">(July 2021 – July 2022)</span></li>
-          <li><strong>Research Intern</strong>, HCL Technologies, Uttar Pradesh, India <span className="date">(April 2020 – July 2020)</span></li>
-          <li><strong>Web Developer Intern</strong>, Minerva Technologies, New Delhi, India <span className="date">(Feb 2020 – May 2020)</span></li>
-        </ul>
-      </section>
-
-      {/* Education Section */}
-      <section id="education" className="education-section">
-        <h2 className="section-title">EDUCATION</h2>
-        <ul className="education-list">
-          <li><strong>Master's degree, Software Engineering</strong>, Stevens Institute of Technology <span className="date">(Sep 2022 - May 2024)</span></li>
-          <li><strong>Bachelor of Technology, Information Technology</strong>, APJ Abdul Kalam Technological University <span className="date">(2017 - 2021)</span></li>
-        </ul>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="contact-section">
-        <h2 className="section-title">CONTACT</h2>
-        <div className="contact-icons-row">
-          <a className="contact-icon" href="mailto:atishay2305@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">✉️</a>
-          <a className="contact-icon" href="https://www.linkedin.com/in/atishay23/" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
-          <a className="contact-icon" href="https://github.com/sudo-atishay" title="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
-        </div>
-    {/* Hyperlinks removed as icons are already present above */}
-      </section>
-
-  {/* Footer removed as requested */}
-    </div>
+        {/* Education */}
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <span className="role">Master's, Software Engineering</span> —
+              Stevens Institute of Technology
+              <span className="meta"> · Sep 2022 – May 2024</span>
+            </li>
+            <li>
+              <span className="role">B.Tech, Information Technology</span> — APJ
+              Abdul Kalam Technological University
+              <span className="meta"> · 2017 – 2021</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
   );
 }
-
-export default App;
