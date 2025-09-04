@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/skills.css';
 
 const SkillsComponent = () => {
   const skills = [
@@ -19,23 +18,13 @@ const SkillsComponent = () => {
   ];
 
   return (
-    <div className="skills-container">
-      <h1 className="skills-heading">SKILLS</h1>
-      <div className="skills-graph">
-        <div className="skills-line">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-node" style={{ '--skill-level': skill.level }}>
-              <div className="skill-bar">
-                <div className="skill-fill" style={{ width: `${skill.level}%` }}></div>
-              </div>
-              <div className="skill-label">
-                <span className="skill-name">{skill.name}</span>
-                <span className="skill-percentage">{skill.level}%</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <div>
+      <h1>SKILLS</h1>
+      <ul>
+        {skills.map((skill, index) => (
+          <li key={index}>{skill.name} - {skill.level}%</li>
+        ))}
+      </ul>
     </div>
   );
 };

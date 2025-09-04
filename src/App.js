@@ -1,8 +1,7 @@
 
 import React from "react";
 import "./main.css";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+
 
 function App() {
   return (
@@ -84,9 +83,9 @@ function App() {
       <section id="contact" className="contact-section">
         <h2 className="section-title">CONTACT</h2>
         <div className="contact-icons-row">
-          <a className="contact-icon" href="mailto:atishay2305@gmail.com" title="Email" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
-          <a className="contact-icon" href="https://www.linkedin.com/in/atishay23/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className="contact-icon" href="https://github.com/sudo-atishay" title="GitHub" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+          <a className="contact-icon" href="mailto:atishay2305@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">✉️</a>
+          <a className="contact-icon" href="https://www.linkedin.com/in/atishay23/" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          <a className="contact-icon" href="https://github.com/sudo-atishay" title="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
         </div>
     {/* Hyperlinks removed as icons are already present above */}
       </section>
