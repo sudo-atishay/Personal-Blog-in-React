@@ -18,7 +18,7 @@ export default function App() {
             <div style={{ display: 'flex', gap: '18px', marginTop: '12px' }}>
               <a href="https://www.linkedin.com/in/atishay23/" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'none' }}>LinkedIn</a>
               <a href="https://github.com/sudo-atishay" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'none' }}>GitHub</a>
-              <a href="mailto:atishay2305@gmail.com" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'none' }}>Email</a>
+              <a href="mailto:atishay23@gmail.com" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'none' }}>Email</a>
             </div>
           </div>
         </header>
