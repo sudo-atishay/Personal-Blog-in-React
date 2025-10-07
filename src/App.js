@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './main.css';
 
 function Social({ href, title, children, className = '' }) {
@@ -17,7 +17,7 @@ function Header() {
       </div>
       <div className="identity">
         <h1 className="name">Atishay Jain</h1>
-        <p className="title">Software engineer focused on reliable infrastructure, security, and practical tooling.</p>
+        <p className="title">Software | Linux | AI | Infrastructure Security</p>
         <nav className="socials" aria-label="Contact and social links">
           <Social href="mailto:atishay23@gmail.com" title="Email">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 014.5 4h15A2.5 2.5 0 0122 6.5v11A2.5 2.5 0 0119.5 20h-15A2.5 2.5 0 012 17.5v-11zM4.5 6a.5.5 0 00-.5.5V8l8 4.5L20 8V6.5a.5.5 0 00-.5-.5h-15z"/></svg>
@@ -41,99 +41,98 @@ function Header() {
   );
 }
 
-function Home({ navigate }) {
+function BlogCard({ post, expanded, onToggle }) {
+  return (
+    <article className={`blog-card ${expanded ? 'expanded' : ''}`}>
+      <div className="card-head">
+        <h3 className="card-title">{post.title}</h3>
+        <div className="card-meta">{post.date}</div>
+      </div>
+      <p className="card-excerpt">{post.excerpt}</p>
+      <div className="card-controls">
+        <button className="read-btn" onClick={() => onToggle(post.id)}>{expanded ? 'Show less' : 'Read'} </button>
+      </div>
+      {expanded && (
+        <div className="card-body">
+          {post.content.map((node, i) => (
+            <div key={i} className="card-block">{node}</div>
+          ))}
+        </div>
+      )}
+    </article>
+  );
+}
+
+function Home() {
+  const [expandedId, setExpandedId] = useState(null);
+
+  const posts = [
+    {
+      id: 'blog1',
+      title: 'On designing resilient rollouts',
+      date: 'Apr 2025',
+      excerpt: 'Thoughts on gradual rollouts, canarying, and measuring risk — start small, measure early, and be ready to rollback.',
+      content: [
+        <p>Draft content goes here. This is a local blog you can edit in the React app. Add sections, code samples, or images as needed.</p>,
+        <h4>Principles</h4>,
+        <p>Start small; make changes observable; be ready to rollback quickly. Ensure experiments are reversible and measure both user-visible signals and internal health metrics.</p>,
+      ],
+    },
+    {
+      id: 'blog2',
+      title: 'A short guide to service hardening',
+      date: 'Dec 2024',
+      excerpt: 'Practical steps to reduce attack surface and improve resilience — a short checklist to get started.',
+      content: [
+        <p>Draft content goes here. Edit this in the app to expand the guide with commands, examples, and references.</p>,
+        <h4>Checklist</h4>,
+        <ul>
+          <li>Minimize network exposure</li>
+          <li>Use least privilege across services</li>
+          <li>Automate dependency updates and vulnerability scanning</li>
+        </ul>,
+      ],
+    },
+  ];
+
+  const toggle = (id) => setExpandedId(expandedId === id ? null : id);
+
   return (
     <div>
       <section className="bio">
         <p>
-          I'm a software engineer who enjoys building dependable systems and improving how teams operate in production. My focus areas include cloud infrastructure, Linux, security, and automation. I like turning complex problems into small, testable pieces and iterating toward robust solutions.
+          Tech professional passionate about AI and Infrastructure Security — writing about Tech, AI, and Linux for fun.
         </p>
       </section>
 
       <section className="projects">
         <h2>Selected Projects</h2>
         <ul>
-          <li><strong>AI-Memory-Assistant</strong> — An AI-powered personal memory assistant built with the MERN stack and SQLite, designed to help users store, organize, and analyze their notes and ideas. It features smart categorization, advanced search, priority ratings, and an analytics dashboard with future-ready AI integration.).</li>
-          <li><strong>Solar Step</strong> — A full-stack MERN application that streamlines the entire solar panel installation workflow—from sales initiation and contract management to scheduling, compliance, and final reporting. It provides an intuitive dashboard and collaboration tools to ensure efficiency and transparency for all stakeholders.</li>
+          <li><strong>AI-Memory-Assistant</strong> — An AI-powered personal memory assistant built with the MERN stack and SQLite, designed to help users store, organize, and analyze their notes and ideas. It features smart categorization, advanced search, priority ratings, and an analytics dashboard with future-ready AI integration.</li>
+          <li><strong>Solar Step</strong> — A full-stack MERN application that streamlines the entire solar panel installation workflow—from sales initiation and contract management to scheduling, compliance, and final reporting.</li>
         </ul>
       </section>
 
       <section className="posts">
         <h2>Recent Writing</h2>
-        <ul>
-          <li><a href="#/blog1" onClick={(e)=>{e.preventDefault(); navigate('#/blog1')}}>On designing resilient rollouts</a> — Apr 2025</li>
-          <li><a href="#/blog2" onClick={(e)=>{e.preventDefault(); navigate('#/blog2')}}>A short guide to service hardening</a> — Dec 2024</li>
-        </ul>
+        <div className="posts-grid">
+          {posts.map((p) => (
+            <BlogCard key={p.id} post={p} expanded={expandedId === p.id} onToggle={toggle} />
+          ))}
+        </div>
       </section>
     </div>
   );
 }
 
-function Blog1({ navigate }) {
-  return (
-    <main className="post">
-      <div className="post-header">
-        <a href="#/" onClick={(e)=>{e.preventDefault(); navigate('#/')}} style={{color:'var(--accent)', textDecoration:'none'}}>← Back</a>
-        <h1 className="post-title">On designing resilient rollouts</h1>
-        <div className="post-meta">Apr 2025 — Thoughts on gradual rollouts, canarying, and measuring risk.</div>
-      </div>
-      <article className="post-body">
-        <p>Draft content goes here. This is a local blog file you can edit directly in the React app source (or embed content here). Add sections, code samples, or images as needed.</p>
-        <h3>Principles</h3>
-        <p>Start small; make changes observable; be ready to rollback quickly. Ensure experiments are reversible and measure both user-visible signals and internal health metrics.</p>
-      </article>
-    </main>
-  );
-}
-
-function Blog2({ navigate }) {
-  return (
-    <main className="post">
-      <div className="post-header">
-        <a href="#/" onClick={(e)=>{e.preventDefault(); navigate('#/')}} style={{color:'var(--accent)', textDecoration:'none'}}>← Back</a>
-        <h1 className="post-title">A short guide to service hardening</h1>
-        <div className="post-meta">Dec 2024 — Practical steps to reduce attack surface and improve resilience.</div>
-      </div>
-      <article className="post-body">
-        <p>Draft content goes here. Edit this component to expand the guide — include commands, links, and examples.</p>
-        <h3>Checklist</h3>
-        <ul>
-          <li>Minimize network exposure</li>
-          <li>Use least privilege across services</li>
-          <li>Automate dependency updates and vulnerability scanning</li>
-        </ul>
-      </article>
-    </main>
-  );
-}
+/* Blog1 and Blog2 components removed — posts are rendered inline via BlogCard */
 
 export default function App() {
-  const [route, setRoute] = useState(window.location.hash || '#/');
-
-  useEffect(() => {
-    function onHash() {
-      setRoute(window.location.hash || '#/');
-    }
-    window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
-  }, []);
-
-  const navigate = (hash) => {
-    window.location.hash = hash;
-    setRoute(hash);
-  };
-
-  let content = null;
-  if (route === '#/' || route === '' ) content = <Home navigate={navigate} />;
-  else if (route === '#/blog1') content = <Blog1 navigate={navigate} />;
-  else if (route === '#/blog2') content = <Blog2 navigate={navigate} />;
-  else content = <Home navigate={navigate} />;
-
   return (
     <div className="page">
       <main className="container">
         <Header />
-        {content}
+        <Home />
         <footer className="site-footer">
           <p className="small">© {new Date().getFullYear()} Atishay Jain — <a href="/resume.pdf">Resume</a></p>
         </footer>
