@@ -53,9 +53,8 @@ function Home({ navigate }) {
       <section className="projects">
         <h2>Selected Projects</h2>
         <ul>
-          <li><strong>Project A</strong> — Small description (observability tooling, automation scripts).</li>
-          <li><strong>Project B</strong> — Small description (self-hosted labs and security experiments).</li>
-          <li><strong>Project C</strong> — Small description (open-source contributions and tools).</li>
+          <li><strong>AI-Memory-Assistant</strong> — An AI-powered personal memory assistant built with the MERN stack and SQLite, designed to help users store, organize, and analyze their notes and ideas. It features smart categorization, advanced search, priority ratings, and an analytics dashboard with future-ready AI integration.).</li>
+          <li><strong>Solar Step</strong> — A full-stack MERN application that streamlines the entire solar panel installation workflow—from sales initiation and contract management to scheduling, compliance, and final reporting. It provides an intuitive dashboard and collaboration tools to ensure efficiency and transparency for all stakeholders.</li>
         </ul>
       </section>
 
