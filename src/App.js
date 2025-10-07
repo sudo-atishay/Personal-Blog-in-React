@@ -159,7 +159,7 @@ function Home() {
       <section className="projects">
         <h2>Selected Projects</h2>
         <ul>
-          <li><strong>AI-Memory-Assistant</strong> — An AI-powered personal memory assistant built with the MERN stack and SQLite, designed to help users store, organize, and analyze their notes and ideas. It features smart categorization, advanced search, priority ratings, and an analytics dashboard with future-ready AI integration.</li>
+          <li><strong>AI-Memory-Assistant</strong> — An AI-powered personal memory assistant built with the Modern JavaScript stack (React.js, Express.js, Node.js) and SQLite, designed to help users store, organize, and analyze their notes and ideas. It features smart categorization, advanced search, priority ratings, and an analytics dashboard with future-ready AI integration.</li>
           <li><strong>Solar Step</strong> — A full-stack MERN application that streamlines the entire solar panel installation workflow—from sales initiation and contract management to scheduling, compliance, and final reporting.</li>
         </ul>
       </section>
