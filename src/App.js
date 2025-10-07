@@ -31,9 +31,6 @@ function Header() {
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 0zM3 8.25h3.98V21H3V8.25zM9.24 8.25h3.82v1.70h.05c.53-1 1.84-2.07 3.8-2.07 4.06 0 4.81 2.67 4.81 6.14V21h-3.98v-5.32c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.39-2.05 2.82V21H9.24V8.25z"/></svg>
             <span className="label">LinkedIn</span>
           </Social>
-          <Social href="/https://drive.google.com/file/d/1PBAwGmQ9Ehxy-IoAXvWqaVPVJwgV3l23/view?usp=drive_link" title="Resume" className="resume">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM13 3.5L18.5 9H13V3.5zM8 12h8v1H8v-1zm0 3h8v1H8v-1zM8 7h3v1H8V7z"/></svg>
-            <span className="label">Resume</span>
           </Social>
         </nav>
       </div>
