@@ -68,6 +68,29 @@ function Home() {
 
   const posts = [
     {
+      id: 'small-lms',
+      title: 'Why Small Language Models Could Be the Future of AI',
+      date: 'Aug 2025',
+      excerpt: 'Small, efficient models that run locally — faster, cheaper, and private. A practical case for SLMs in real-world apps.',
+      content: [
+        <p>When people talk about AI today, large language models (LLMs) like GPT-4 or Claude often steal the spotlight. They’re powerful, capable of writing essays, coding, summarizing content, and even generating images. But behind the hype, there’s a growing trend that many experts believe could shape the future of AI: small language models (SLMs).</p>,
+        <h4>What Are Small Language Models?</h4>,
+        <p>Small language models are AI models that are much smaller in size than the massive LLMs you’ve heard about. Instead of billions of parameters, they typically have millions or low billions of parameters. This might sound like a limitation—but it’s actually an advantage in many scenarios. Smaller models are faster, cheaper, and easier to run, while still performing surprisingly well on specific tasks.</p>,
+        <h4>Why They Matter</h4>,
+        <p><strong>Cost Efficiency</strong><br/>Large models require huge compute resources, expensive GPUs, and high electricity usage. Small models, by contrast, can run on consumer hardware or lightweight cloud instances, dramatically lowering costs. This makes AI accessible to startups, researchers, and even individual developers.</p>,
+        <p><strong>Speed and Latency</strong><br/>SLMs respond faster because they process less data at each step. This is crucial for applications like chatbots, edge devices, mobile apps, or real-time tools where milliseconds matter.</p>,
+        <p><strong>Privacy and Security</strong><br/>Because small models can run locally on a user’s device, they can process sensitive data without sending it to the cloud, reducing privacy risks. This is a huge advantage for sectors like healthcare, finance, and personal productivity tools.</p>,
+        <p><strong>Energy Efficiency and Sustainability</strong><br/>AI has an environmental footprint. Running massive LLMs constantly consumes a lot of energy. Small models, however, consume far less power, making them more environmentally friendly.</p>,
+        <p><strong>Customizability and Fine-Tuning</strong><br/>Small models are easier to fine-tune for niche domains. For example, a company could take a pre-trained small model and adapt it to legal documents, medical records, or internal corporate knowledge without massive computational overhead.</p>,
+        <h4>The Hybrid Approach: Big + Small</h4>,
+        <p>Many experts envision a future where big models provide general knowledge while small models handle specialized or real-time tasks. For instance, a small model could live on your phone and summarize your emails instantly, while a large model in the cloud handles complex reasoning tasks. This hybrid setup could make AI more practical, responsive, and cost-effective.</p>,
+        <h4>Challenges Ahead</h4>,
+        <p>Small models are not perfect. They struggle with complex reasoning and may generate less nuanced or creative outputs than large models. But for most real-world applications—like customer support, summarization, classification, and search—they’re already good enough.</p>,
+        <h4>Why This Matters for the Future</h4>,
+        <p>The rise of small language models signals a shift from “one-size-fits-all” AI to personalized, efficient, and accessible AI tools. They enable companies and individuals to leverage AI without huge infrastructure costs, privacy concerns, or latency issues. In short, small models may not grab headlines like GPT-4, but they’re quietly shaping the next generation of practical AI applications.</p>,
+      ],
+    },
+    {
       id: 'raspi-lab',
       title: 'Building a Modern Raspberry Pi Home Lab: A Hands-On Sysadmin Journey',
       date: 'Jul 2025',
