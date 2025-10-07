@@ -108,3 +108,29 @@ h2{margin:0 0 12px 0;font-size:18px}
   .social{padding:6px}
   .name{font-size:22px}
 }
+
+/* Blog card styles */
+.posts-grid{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.blog-card{
+  background:var(--paper);
+  border:1px solid rgba(15,23,42,0.04);
+  padding:14px 16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(15,23,42,0.04);
+}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card-title{margin:0;font-size:16px}
+.card-meta{color:var(--muted);font-size:13px}
+.card-excerpt{margin:8px 0;color:var(--muted)}
+.card-controls{display:flex;justify-content:flex-end}
+.read-btn{background:transparent;border:1px solid rgba(37,99,235,0.12);padding:6px 10px;border-radius:8px;color:var(--accent);cursor:pointer;font-weight:600}
+.card-body{margin-top:12px;color:var(--text);line-height:1.65}
+.card-block{margin-bottom:12px}
+
+@media (min-width:720px){
+  .posts-grid{grid-template-columns:1fr}
+}

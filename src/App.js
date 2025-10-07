@@ -134,7 +134,7 @@ export default function App() {
         <Header />
         <Home />
         <footer className="site-footer">
-          <p className="small">© {new Date().getFullYear()} Atishay Jain — <a href="/resume.pdf">Resume</a></p>
+          <p className="small">© {new Date().getFullYear()} Atishay Jain</p>
         </footer>
       </main>
     </div>
